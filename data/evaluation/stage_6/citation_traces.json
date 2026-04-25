@@ -1,0 +1,287 @@
+[
+  {
+    "query_id": "q1",
+    "cited_chunk_ids": [
+      "pubmed_23086956_3",
+      "pubmed_28490751_1",
+      "pubmed_28490751_2"
+    ],
+    "resolved_chunks": [
+      {
+        "chunk_id": "pubmed_23086956_3",
+        "source": "pubmed",
+        "record_id": "23086956",
+        "text": "Although phenytoin increased surface expression of G1674R, channel function was not restored, suggesting that this mutation also causes an intrinsic loss of function. Both phenytoin and lamotrigine increased functional expression of R1648C, but lamotrigine also increased persistent sodium current evoked by this mutation. Our findings indicate that certain nontruncating SCN1A mutations associated with SMEI have impaired cell surface expression and that some alleles may be amenable to pharmacological rescue of this defect. However, rescue of dysfunctional Na(V)1.1 channels to the plasma membrane could contribute to exacerbating rather than ameliorating the disease.",
+        "token_count": 147,
+        "metadata": {
+          "pmid": "23086956",
+          "title": "Nontruncating SCN1A mutations associated with severe myoclonic epilepsy of infancy impair cell surface expression.",
+          "journal": "The Journal of biological chemistry",
+          "publication_year": 2012,
+          "doi": "10.1074/jbc.M112.421883"
+        }
+      },
+      {
+        "chunk_id": "pubmed_28490751_1",
+        "source": "pubmed",
+        "record_id": "28490751",
+        "text": "Unexpectedly, GS967 significantly improved survival of Scn1a +/- mice and suppressed spontaneous seizures. By contrast, lamotrigine exacerbated the seizure phenotype. Electrophysiological recordings of acutely dissociated neurons revealed that chronic GS967-treatment had no impact on evoked action potential firing frequency of interneurons, but did suppress aberrant spontaneous firing of pyramidal neurons and was associated with significantly lower sodium current density. Lamotrigine had no effects on neuronal excitability of either neuron subtype. Additionally, chronically GS967-treated Scn1a +/- mice exhibited normalized pyramidal neuron sodium current density and reduced hippocampal SCN8A protein levels, whereas lamotrigine treatment had no effect on either pyramidal neuron sodium current or hippocampal SCN8A levels.",
+        "token_count": 192,
+        "metadata": {
+          "pmid": "28490751",
+          "title": "Unexpected Efficacy of a Novel Sodium Channel Modulator in Dravet Syndrome.",
+          "journal": "Scientific reports",
+          "publication_year": 2017,
+          "doi": "10.1111/j.1528-1167.2011.03040.x"
+        }
+      },
+      {
+        "chunk_id": "pubmed_28490751_2",
+        "source": "pubmed",
+        "record_id": "28490751",
+        "text": "Additionally, chronically GS967-treated Scn1a +/- mice exhibited normalized pyramidal neuron sodium current density and reduced hippocampal SCN8A protein levels, whereas lamotrigine treatment had no effect on either pyramidal neuron sodium current or hippocampal SCN8A levels. Our findings demonstrate unexpected efficacy of a novel sodium channel blocker in Dravet syndrome and suggest a potential mechanism involving a secondary change in SCN8A.",
+        "token_count": 102,
+        "metadata": {
+          "pmid": "28490751",
+          "title": "Unexpected Efficacy of a Novel Sodium Channel Modulator in Dravet Syndrome.",
+          "journal": "Scientific reports",
+          "publication_year": 2017,
+          "doi": "10.1111/j.1528-1167.2011.03040.x"
+        }
+      }
+    ],
+    "unresolvable_ids": [],
+    "grounding_rate": 1.0
+  },
+  {
+    "query_id": "q2",
+    "cited_chunk_ids": [
+      "pubmed_21115638_0",
+      "pubmed_37846879_4",
+      "pubmed_22365309_0"
+    ],
+    "resolved_chunks": [
+      {
+        "chunk_id": "pubmed_21115638_0",
+        "source": "pubmed",
+        "record_id": "21115638",
+        "text": "SCN9A mutations associated with paroxysmal extreme pain disorder, but not erythromelalgia, enhance Navbeta4 peptide-mediated resurgent sodium currents. Abnormal pain sensitivity associated with inherited and acquired pain disorders occurs through increased excitability of peripheral sensory neurons in part due to changes in the properties of voltage-gated sodium channels (Navs). Resurgent sodium currents (I(NaR)) are atypical currents believed to be associated with increased excitability of neurons and may have implications in pain. Mutations in SCN9A (peripheral Nav isoform) associated with two genetic pain disorders, inherited erythromelalgia (IEM) and paroxysmal extreme pain disorder (PEPD), enhance SCN9A function via distinct mechanisms.",
+        "token_count": 165,
+        "metadata": {
+          "pmid": "21115638",
+          "title": "Nav1.7 mutations associated with paroxysmal extreme pain disorder, but not erythromelalgia, enhance Navbeta4 peptide-mediated resurgent sodium currents.",
+          "journal": "The Journal of physiology",
+          "publication_year": 2011,
+          "doi": "10.1113/jphysiol.2010.200915"
+        }
+      },
+      {
+        "chunk_id": "pubmed_37846879_4",
+        "source": "pubmed",
+        "record_id": "37846879",
+        "text": "Gain-of-function mutations (GOF) of SCN9A identified in inherited erythromelalgia (IEM), a human genetic model of neuropathic pain, produce DRG neuron hyperexcitability, which in turn produces severe pain. We found that Ih increases rheobase and reduces firing probability in small DRG neurons expressing WT SCN9A, and demonstrate that the amplitude of subthreshold oscillations is reduced by Ih . We also demonstrate that Ih reverses the hyperexcitability of DRG neurons expressing a GOF SCN9A mutation (L858H) that causes IEM. Our results show that, in contrast to cardiac cells and CNS neurons, Ih acts to stabilize DRG neuron excitability and prevents excessive firing.",
+        "token_count": 172,
+        "metadata": {
+          "pmid": "37846879",
+          "title": "Ih current stabilizes excitability in rodent DRG neurons and reverses hyperexcitability in a nociceptive neuron model of inherited neuropathic pain.",
+          "journal": "The Journal of physiology",
+          "publication_year": 2023,
+          "doi": "10.1113/JP284999"
+        }
+      },
+      {
+        "chunk_id": "pubmed_22365309_0",
+        "source": "pubmed",
+        "record_id": "22365309",
+        "text": "Imaging the neural correlates of neuropathic pain and pleasurable relief associated with inherited erythromelalgia in a single subject with quantitative arterial spin labelling. We identified a patient with severe inherited erythromelalgia secondary to an L858F mutation in the voltage-gated sodium channel Na(v)1.7. The patient reported severe ongoing foot pain, which was exquisitely sensitive to limb cooling. We confirmed this heat hypersensitivity using quantitative sensory testing. Additionally, we employed a novel perfusion imaging technique in a simple block design to assess her baseline erythromelalgia pain vs cooling relief. Robust activations of key pain, pain-affect, and reward-related centres were observed. This combined approach allowed us to confirm the presence of a temperature-sensitive channelopathy of peripheral neurons and to investigate the neural correlates of tonic neuropathic pain and relief in a single subject.",
+        "token_count": 192,
+        "metadata": {
+          "pmid": "22365309",
+          "title": "Imaging the neural correlates of neuropathic pain and pleasurable relief associated with inherited erythromelalgia in a single subject with quantitative arterial spin labelling.",
+          "journal": "Pain",
+          "publication_year": 2012,
+          "doi": "10.1016/j.pain.2011.12.012"
+        }
+      }
+    ],
+    "unresolvable_ids": [],
+    "grounding_rate": 1.0
+  },
+  {
+    "query_id": "q3",
+    "cited_chunk_ids": [
+      "pubmed_37846879_2",
+      "pubmed_26005195_2",
+      "pubmed_25556685_1"
+    ],
+    "resolved_chunks": [
+      {
+        "chunk_id": "pubmed_37846879_2",
+        "source": "pubmed",
+        "record_id": "37846879",
+        "text": "Moreover, we show that Ih reverses the hyperexcitability of DRG neurons expressing a gain-of-function SCN9A mutation that causes IEM. In the aggregate, our results show that Ih unexpectedly has strikingly different effects in DRG neurons as compared to previously- and well-studied cardiac cells. Within DRG neurons where SCN9A is present, Ih reduces depolarizing sodium current inflow due to enhancement of SCN9A channel fast inactivation and creates additional damping action by reversal of Ih direction from depolarizing to hyperpolarizing close to the threshold for AP generation. These actions of Ih limit the firing of DRG neurons expressing WT SCN9A and reverse the hyperexcitability of DRG neurons expressing a gain-of-function SCN9A mutation that causes IEM.",
+        "token_count": 180,
+        "metadata": {
+          "pmid": "37846879",
+          "title": "Ih current stabilizes excitability in rodent DRG neurons and reverses hyperexcitability in a nociceptive neuron model of inherited neuropathic pain.",
+          "journal": "The Journal of physiology",
+          "publication_year": 2023,
+          "doi": "10.1113/JP284999"
+        }
+      },
+      {
+        "chunk_id": "pubmed_26005195_2",
+        "source": "pubmed",
+        "record_id": "26005195",
+        "text": "Nav isoform functional analysis was then performed in L(4\u20106) DRG neurons 14 days after CCI. The SCN10A current density was markedly decreased in injured DRG neurons following CCI. The voltage\u2010dependent activation of the SCN10A channel in these neurons was shifted to depolarized potentials by 5.3 mV, while it was shifted to hyperpolarized potentials by 10 mV for inactivation. The electrophysiological function of SCN11A was not affected by CCI. The present study demonstrated that ectopic discharge following CCI, which was likely induced by a positive shift in the SCN10A current inactivation curve in injured neurons, enhanced the excitability of the neurons by facilitating tetrodotoxin\u2010resistant sodium channels into the fast inactivation state and did not occur as a result of a compensatory redistribution in the contralateral uninjured neurons.",
+        "token_count": 196,
+        "metadata": {
+          "pmid": "26005195",
+          "title": "Positive shift of Nav1.8 current inactivation curve in injured neurons causes neuropathic pain following chronic constriction injury.",
+          "journal": "Molecular medicine reports",
+          "publication_year": 2015,
+          "doi": "10.3892/mmr.2015.3839"
+        }
+      },
+      {
+        "chunk_id": "pubmed_25556685_1",
+        "source": "pubmed",
+        "record_id": "25556685",
+        "text": "Functional analyses have shown that these mutations produce a spectrum of pro-excitatory changes in channel biophysics, with the shared outcome at the cellular level of dorsal root ganglion hyperexcitability. Reduced neurite outgrowth may be another consequence of sodium channel mutations, and possible therapeutic strategies include blockade of sodium channels or block of reverse operation of the sodium-calcium exchanger. Increased understanding of the pathophysiology of painful peripheral neuropathy offers new targets that may provide a basis for more effective treatment.",
+        "token_count": 105,
+        "metadata": {
+          "pmid": "25556685",
+          "title": "Painful peripheral neuropathy and sodium channel mutations.",
+          "journal": "Neuroscience letters",
+          "publication_year": 2015,
+          "doi": "10.1016/j.neulet.2014.12.056"
+        }
+      }
+    ],
+    "unresolvable_ids": [],
+    "grounding_rate": 1.0
+  },
+  {
+    "query_id": "q4",
+    "cited_chunk_ids": [
+      "pubmed_28490751_2",
+      "pubmed_31607539_0",
+      "pubmed_31830809_0",
+      "pubmed_36868483_3",
+      "pubmed_40048808_4"
+    ],
+    "resolved_chunks": [
+      {
+        "chunk_id": "pubmed_28490751_2",
+        "source": "pubmed",
+        "record_id": "28490751",
+        "text": "Additionally, chronically GS967-treated Scn1a +/- mice exhibited normalized pyramidal neuron sodium current density and reduced hippocampal SCN8A protein levels, whereas lamotrigine treatment had no effect on either pyramidal neuron sodium current or hippocampal SCN8A levels. Our findings demonstrate unexpected efficacy of a novel sodium channel blocker in Dravet syndrome and suggest a potential mechanism involving a secondary change in SCN8A.",
+        "token_count": 102,
+        "metadata": {
+          "pmid": "28490751",
+          "title": "Unexpected Efficacy of a Novel Sodium Channel Modulator in Dravet Syndrome.",
+          "journal": "Scientific reports",
+          "publication_year": 2017,
+          "doi": "10.1111/j.1528-1167.2011.03040.x"
+        }
+      },
+      {
+        "chunk_id": "pubmed_31607539_0",
+        "source": "pubmed",
+        "record_id": "31607539",
+        "text": "dCas9-Based Scn1a Gene Activation Restores Inhibitory Interneuron Excitability and Attenuates Seizures in Dravet Syndrome Mice. Dravet syndrome (DS) is a severe epileptic encephalopathy caused mainly by heterozygous loss-of-function mutations of the SCN1A gene, indicating haploinsufficiency as the pathogenic mechanism. Here we tested whether catalytically dead Cas9 (dCas9)-mediated Scn1a gene activation can rescue Scn1a haploinsufficiency in a mouse DS model and restore physiological levels of its gene product, the SCN1A voltage-gated sodium channel. We screened single guide RNAs (sgRNAs) for their ability to stimulate Scn1a transcription in association with the dCas9 activation system.",
+        "token_count": 178,
+        "metadata": {
+          "pmid": "31607539",
+          "title": "dCas9-Based Scn1a Gene Activation Restores Inhibitory Interneuron Excitability and Attenuates Seizures in Dravet Syndrome Mice.",
+          "journal": "Molecular therapy : the journal of the American Society of Gene Therapy",
+          "publication_year": 2020,
+          "doi": "10.1016/j.ymthe.2019.08.018"
+        }
+      },
+      {
+        "chunk_id": "pubmed_31830809_0",
+        "source": "pubmed",
+        "record_id": "31830809",
+        "text": "Sexually Divergent Mortality and Partial Phenotypic Rescue After Gene Therapy in a Mouse Model of Dravet Syndrome. Dravet syndrome (DS) is a neurodevelopmental genetic disorder caused by mutations in the SCN1A gene encoding the \u03b1 subunit of the SCN1A voltage-gated sodium channel that controls neuronal action potential firing. The high density of this mutated channel in GABAergic interneurons results in impaired inhibitory neurotransmission and subsequent excessive activation of excitatory neurons. The syndrome is associated with severe childhood epilepsy, autistic behaviors, and sudden unexpected death in epilepsy. Here, we compared the rescue effects of an adeno-associated viral (AAV) vector coding for the multifunctional \u03b21 sodium channel auxiliary subunit (AAV-NaV\u03b21) with a control vector lacking a transgene.",
+        "token_count": 187,
+        "metadata": {
+          "pmid": "31830809",
+          "title": "Sexually Divergent Mortality and Partial Phenotypic Rescue After Gene Therapy in a Mouse Model of Dravet Syndrome.",
+          "journal": "Human gene therapy",
+          "publication_year": 2020,
+          "doi": "10.1089/hum.2019.225"
+        }
+      },
+      {
+        "chunk_id": "pubmed_36868483_3",
+        "source": "pubmed",
+        "record_id": "36868483",
+        "text": "SCN1A gain-of-function was modelled by enhancing the excitability of PV interneurons and then incorporating three simple forms of homeostatic plasticity that restored pyramidal cell firing rates. We found that homeostatic plasticity mechanisms exerted differential impact upon network function, with changes to PV-to-PC and PC-to-PC synaptic strength predisposing to network instability. Overall, our findings support a role for SCN1A gain-of-function and inhibitory interneuron hyperexcitability in early onset DEE. We propose a mechanism through which homeostatic plasticity pathways can predispose to pathological excitatory activity and contribute to phenotypic variability in SCN1A disorders.",
+        "token_count": 154,
+        "metadata": {
+          "pmid": "36868483",
+          "title": "Biophysical characterization and modelling of SCN1A gain-of-function predicts interneuron hyperexcitability and a predisposition to network instability through homeostatic plasticity.",
+          "journal": "Neurobiology of disease",
+          "publication_year": 2023,
+          "doi": "10.1016/j.nbd.2023.106059"
+        }
+      },
+      {
+        "chunk_id": "pubmed_40048808_4",
+        "source": "pubmed",
+        "record_id": "40048808",
+        "text": "SIGNIFICANCE STATEMENT: Modern medicine relies on ion channels and G protein-coupled receptors (GPCRs) as key targets. In studies of Dravet syndrome, a devastating genetic disorder with features of epilepsy and autism, William Catterall connected SCN1A mutations to deficient excitability of inhibitory neurons. He and his colleagues explored preclinical interventions using cannabidiol (CBD) and clobazam, opening the way to a current understanding of CBD's therapeutic mechanism. CBD affects both ion channels and GPR55, a GPCR activated by lysophosphatidylinositol, an activity-dependent lipid messenger, readjusting the synaptic excitatory-inhibitory ratio.",
+        "token_count": 156,
+        "metadata": {
+          "pmid": "40048808",
+          "title": "Ion channels and G protein-coupled receptors: Cannabidiol actions on disorders of excitability and synaptic excitatory-inhibitory ratio.",
+          "journal": "Molecular pharmacology",
+          "publication_year": 2025,
+          "doi": "10.1016/j.molpha.2025.100017"
+        }
+      }
+    ],
+    "unresolvable_ids": [],
+    "grounding_rate": 1.0
+  },
+  {
+    "query_id": "q5",
+    "cited_chunk_ids": [
+      "pubmed_30231997_0",
+      "pubmed_30231997_1"
+    ],
+    "resolved_chunks": [
+      {
+        "chunk_id": "pubmed_30231997_0",
+        "source": "pubmed",
+        "record_id": "30231997",
+        "text": "Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. Selective block of SCN9A promises to produce non-narcotic analgesic activity without motor or cognitive impairment. Several SCN9A-selective blockers have been reported, but efficacy in animal pain models required high multiples of the IC50 for channel block. Here, we report a target engagement assay using transgenic mice that has enabled the development of a second generation of selective SCN9A inhibitors that show robust analgesic activity in inflammatory and neuropathic pain models at low multiples of the IC50. Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel.",
+        "token_count": 195,
+        "metadata": {
+          "pmid": "30231997",
+          "title": "Selective NaV1.7 Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain.",
+          "journal": "Cell reports",
+          "publication_year": 2018,
+          "doi": "10.1016/j.celrep.2018.08.063"
+        }
+      },
+      {
+        "chunk_id": "pubmed_30231997_1",
+        "source": "pubmed",
+        "record_id": "30231997",
+        "text": "Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel. Chronic dosing increases compound potency about 10-fold, possibly due to reversal of sensitization arising during chronic injury, and provides efficacy that persists long after the compound has cleared from plasma.",
+        "token_count": 104,
+        "metadata": {
+          "pmid": "30231997",
+          "title": "Selective NaV1.7 Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain.",
+          "journal": "Cell reports",
+          "publication_year": 2018,
+          "doi": "10.1016/j.celrep.2018.08.063"
+        }
+      }
+    ],
+    "unresolvable_ids": [],
+    "grounding_rate": 1.0
+  }
+]

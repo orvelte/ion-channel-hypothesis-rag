@@ -1,0 +1,301 @@
+{
+  "timestamp": "2026-04-23T00:11:52.678538",
+  "embedding_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "llm_model": "claude-opus-4-6",
+  "prompt_variant": "cot",
+  "retrieval_k": 7,
+  "n_queries": 5,
+  "taxonomy": {
+    "pass": 3,
+    "retrieval_failure": 1,
+    "generation_failure": 0,
+    "data_gap": 1
+  },
+  "per_query": [
+    {
+      "query_id": "h1",
+      "query": "What compounds have demonstrated selectivity for SCN9A over SCN5A?",
+      "primary_terms": [
+        "SCN9A",
+        "SCN5A"
+      ],
+      "corpus_coverage": {
+        "SCN9A": 104,
+        "selectivity": 10,
+        "SCN5A": 22
+      },
+      "retrieval_coverage": {
+        "SCN9A": true,
+        "SCN5A": true
+      },
+      "retrieved_chunk_ids": [
+        "pubmed_30231997_0",
+        "pubmed_26861708_1",
+        "pubmed_37498871_0",
+        "pubmed_30231997_1",
+        "pubmed_26861708_0",
+        "pubmed_29393394_0",
+        "pubmed_32335140_2"
+      ],
+      "call_error": null,
+      "parse_error": null,
+      "parsed": {
+        "hypothesis": "Compounds that achieve selectivity for SCN9A over SCN5A \u2014 including arylsulfonamides and second-generation acylsulfonamides \u2014 do so by targeting the voltage sensor domain 4 (VSD4) surface, which diverges sufficiently between SCN9A and SCN5A to permit isoform-selective, state-dependent block, and this selectivity is further enhanced by prolonged target residence time that amplifies functional discrimination under physiological gating conditions.",
+        "supporting_chunk_ids": [
+          "pubmed_30231997_0",
+          "pubmed_30231997_1",
+          "pubmed_26861708_0",
+          "pubmed_26861708_1"
+        ],
+        "confidence": "medium",
+        "data_gaps": [
+          "The specific chemical structures of SCN9A-selective compounds identified in the FLIPR screen are not disclosed in the retrieved context",
+          "No structural or sequence-level comparison of VSD4 between SCN9A and SCN5A is provided to explain the molecular basis of selectivity",
+          "Whether the delay-to-onset phenotype compounds from the FLIPR screen also bind VSD4 or a distinct site is not established",
+          "Quantitative selectivity ratios (IC50 SCN5A / IC50 SCN9A) for the acylsulfonamides are not reported in the retrieved context"
+        ],
+        "mechanism_type": "channel block"
+      },
+      "grounding_rate": 1.0,
+      "unresolvable_ids": [],
+      "citation_flags": [
+        "single_modality: all resolved chunks are from 'pubmed' only"
+      ],
+      "verbatim_overlap_5gram": 0.0,
+      "plausibility": {
+        "verdict": "PLAUSIBLE",
+        "reasoning": "PLAUSIBLE \u2014 Arylsulfonamides (e.g., GX-936) and related acylsulfonamides are well-documented to bind the S1\u2013S4 voltage-sensor domain 4 (VSD4) of Nav1.7 (SCN9A), trapping it in an activated (inactivated-state) conformation, and structural and mutagenesis studies confirm that non-conserved residues in the VSD4 extracellular cleft between Nav1.7 and Nav1.5 (SCN5A) underpin isoform selectivity, while prolonged residence time (slow off-rate) at this site is a recognized strategy to enhance functional selectivity by preferentially accumulating block during repetitive or sustained depolarizations characteristic of nociceptor firing but not cardiac pacemaking.",
+        "error": null
+      },
+      "failure_type": "pass",
+      "failure_reasoning": "Relevant chunks retrieved; output parsed, grounded, and plausible",
+      "raw_response": "I'll analyze the retrieved chunks step by step.\n\n**Step 1: Identify relevant chunks**\n\nThe most relevant chunks are:\n- [pubmed_30231997_0] and [pubmed_30231997_1]: Describe acylsulfonamide and arylsulfonamide SCN9A-selective blockers targeting voltage sensor domain 4 (VSD4).\n- [pubmed_26861708_0] and [pubmed_26861708_1]: Describe a high-throughput screening approach that identified compounds with pharmacological selectivity for SCN9A over SCN5A using FLIPR-based kinetic analysis.\n\n**Step 2: Extract key mechanistic claims**\n\n- Arylsulfonamides and acylsulfonamides achieve SCN9A selectivity by targeting a binding site on the surface of VSD4, producing steeply state-dependent block [pubmed_30231997_0, pubmed_30231997_1].\n- Improved efficacy of second-generation acylsulfonamides correlates with very slow dissociation (long residence time) from SCN9A [pubmed_30231997_0, pubmed_30231997_1].\n- A FLIPR-based AUC kinetic analysis method differentiated compounds with SCN9A selectivity over SCN5A, confirmed by electrophysiology; some compounds produced a delay-to-onset phenotype rather than simple peak reduction [pubmed_26861708_1].\n- Known local anesthetic site inhibitors reduced maximal response, but a distinct subset of compounds showed a concentration-dependent delay in onset \u2014 suggesting a different mechanism of action from traditional pore-blocking local anesthetics [pubmed_26861708_1].\n\n**Step 3: Synthesize a hypothesis**\n\nThe VSD4-targeting mechanism and the delay-to-onset phenotype both point toward state-dependent, non-pore-blocking mechanisms as the basis for achieving SCN9A/SCN5A selectivity.\n\n**Step 4: Identify gaps**\n\n- The specific chemical identities of the FLIPR-identified SCN9A-selective compounds from [pubmed_26861708_1] are not disclosed.\n- Whether the FLIPR-identified compounds also target VSD4 like the arylsulfonamides/acylsulfonamides is not stated.\n- Direct structural comparison of VSD4 between SCN9A and SCN5A explaining selectivity is not provided.\n\n```json\n{\n  \"hypothesis\": \"Compounds that achieve selectivity for SCN9A over SCN5A \u2014 including arylsulfonamides and second-generation acylsulfonamides \u2014 do so by targeting the voltage sensor domain 4 (VSD4) surface, which diverges sufficiently between SCN9A and SCN5A to permit isoform-selective, state-dependent block, and this selectivity is further enhanced by prolonged target residence time that amplifies functional discrimination under physiological gating conditions.\",\n  \"supporting_chunk_ids\": [\n    \"pubmed_30231997_0\",\n    \"pubmed_30231997_1\",\n    \"pubmed_26861708_0\",\n    \"pubmed_26861708_1\"\n  ],\n  \"confidence\": \"medium\",\n  \"data_gaps\": [\n    \"The specific chemical structures of SCN9A-selective compounds identified in the FLIPR screen are not disclosed in the retrieved context\",\n    \"No structural or sequence-level comparison of VSD4 between SCN9A and SCN5A is provided to explain the molecular basis of selectivity\",\n    \"Whether the delay-to-onset phenotype compounds from the FLIPR screen also bind VSD4 or a distinct site is not established\",\n    \"Quantitative selectivity ratios (IC50 SCN5A / IC50 SCN9A) for the acylsulfonamides are not reported in the retrieved context\"\n  ],\n  \"mechanism_type\": \"channel block\"\n}\n```"
+    },
+    {
+      "query_id": "h2",
+      "query": "How does persistent sodium current contribute to neuropathic pain signalling?",
+      "primary_terms": [
+        "persistent",
+        "neuropathic"
+      ],
+      "corpus_coverage": {
+        "persistent sodium": 8,
+        "neuropathic": 116
+      },
+      "retrieval_coverage": {
+        "persistent": true,
+        "neuropathic": true
+      },
+      "retrieved_chunk_ids": [
+        "pubmed_30617209_0",
+        "pubmed_12514212_0",
+        "pubmed_30617209_2",
+        "pubmed_29497094_2",
+        "pubmed_12514212_1",
+        "pubmed_23055484_1",
+        "pubmed_24440715_1"
+      ],
+      "call_error": null,
+      "parse_error": null,
+      "parsed": {
+        "hypothesis": "In neuropathic pain, SCN10A (Nav1.8) channels with impaired inactivation\u2014whether due to gain-of-function mutations or post-injury modulation\u2014generate enhanced TTX-resistant resurgent and persistent sodium currents via \u03b24 subunit-mediated open-channel block, and this effect is amplified by the redistribution of functional Nav1.8 channels into uninjured unmyelinated axons, collectively driving sustained depolarization and hyperexcitability in nociceptive sensory neurons.",
+        "supporting_chunk_ids": [
+          "pubmed_30617209_0",
+          "pubmed_30617209_2",
+          "pubmed_12514212_0",
+          "pubmed_12514212_1",
+          "pubmed_23055484_1"
+        ],
+        "confidence": "medium",
+        "data_gaps": [
+          "No direct evidence in the context that Nav1.8 redistribution to uninjured axons after nerve injury specifically enhances persistent or resurgent current magnitude in those axons",
+          "The persistent sodium current deactivation shift mechanism is demonstrated in Drosophila GABAergic neurons, not in mammalian nociceptors, so its relevance to neuropathic pain signalling is extrapolated",
+          "The context does not clarify whether post-injury conditions (e.g., inflammatory mediators) modulate Nav1.8 inactivation properties similarly to the described gain-of-function mutations",
+          "No data provided on how \u03b24 subunit expression levels change in uninjured axons after nerve injury, which would be critical for the proposed amplification mechanism"
+        ],
+        "mechanism_type": "channel block"
+      },
+      "grounding_rate": 1.0,
+      "unresolvable_ids": [],
+      "citation_flags": [
+        "single_modality: all resolved chunks are from 'pubmed' only"
+      ],
+      "verbatim_overlap_5gram": 0.0,
+      "plausibility": {
+        "verdict": "PLAUSIBLE",
+        "reasoning": "PLAUSIBLE \u2014 The hypothesis integrates well-established observations: Nav1.8 gain-of-function mutations and post-injury modulation impair inactivation, \u03b24 peptide-mediated open-channel block is a recognized mechanism for generating resurgent currents in sodium channels, Nav1.8 redistribution to uninjured fibers after nerve injury is documented, and the resulting persistent and resurgent TTX-resistant currents would indeed sustain depolarization and hyperexcitability in nociceptors, making this a pharmacologically coherent (though complex and multi-component) mechanistic framework for neuropathic pain.",
+        "error": null
+      },
+      "failure_type": "pass",
+      "failure_reasoning": "Relevant chunks retrieved; output parsed, grounded, and plausible",
+      "raw_response": "I'll analyze the retrieved chunks step by step.\n\n**Step 1: Identify relevant chunks**\n\n- [pubmed_30617209_0] and [pubmed_30617209_2]: Directly address how impaired inactivation in SCN10A leads to increased resurgent sodium currents, causing nociceptor hyperexcitability and neuropathic pain.\n- [pubmed_12514212_0] and [pubmed_12514212_1]: Describe how Nav1.8 (SCN10A) redistributes to uninjured axons, enabling neuropathic pain through increased functional channels in unmyelinated axons.\n- [pubmed_23055484_1]: Describes a mechanism where persistent sodium current deactivation threshold shifts to more negative voltages, leading to sustained depolarizations \u2014 relevant mechanistic parallel though in a different context (GABAergic neurons/febrile seizures).\n- [pubmed_24440715_1]: Notes that different pain phenotypes require different sodium channel repertoires, adding nuance.\n- [pubmed_29497094_2]: Discusses SCN8A role in large DRG neurons for neuropathic pain.\n\n**Step 2: Key mechanistic claims**\n\n1. SCN10A gain-of-function mutations impair inactivation, increasing TTX-resistant resurgent sodium currents [pubmed_30617209_0].\n2. \u03b24 subunit mediates open-channel block that generates resurgent currents; knockdown of \u03b24 reduces resurgent currents by 56% and reduces excitability [pubmed_30617209_2].\n3. Nav1.8 redistributes to uninjured axons after nerve injury, increasing functional channel density in unmyelinated fibers [pubmed_12514212_1].\n4. Persistent sodium current deactivation can shift to more negative voltages, causing sustained depolarizations [pubmed_23055484_1].\n\n**Step 3: Synthesize hypothesis**\n\nThe combination of Nav1.8 redistribution to uninjured axons and impaired inactivation (whether from mutations or injury-induced modulation) would amplify persistent/resurgent sodium currents, driving sustained depolarization and hyperexcitability in nociceptors.\n\n**Step 4: Gaps**\n\n- No direct evidence in the context linking Nav1.8 redistribution specifically to enhanced persistent (as opposed to resurgent) currents in the injury setting.\n- The persistent current deactivation shift mechanism [pubmed_23055484_1] is from a Drosophila GEFS+ model, not directly from nociceptive neurons.\n\n```json\n{\n  \"hypothesis\": \"In neuropathic pain, SCN10A (Nav1.8) channels with impaired inactivation\u2014whether due to gain-of-function mutations or post-injury modulation\u2014generate enhanced TTX-resistant resurgent and persistent sodium currents via \u03b24 subunit-mediated open-channel block, and this effect is amplified by the redistribution of functional Nav1.8 channels into uninjured unmyelinated axons, collectively driving sustained depolarization and hyperexcitability in nociceptive sensory neurons.\",\n  \"supporting_chunk_ids\": [\n    \"pubmed_30617209_0\",\n    \"pubmed_30617209_2\",\n    \"pubmed_12514212_0\",\n    \"pubmed_12514212_1\",\n    \"pubmed_23055484_1\"\n  ],\n  \"confidence\": \"medium\",\n  \"data_gaps\": [\n    \"No direct evidence in the context that Nav1.8 redistribution to uninjured axons after nerve injury specifically enhances persistent or resurgent current magnitude in those axons\",\n    \"The persistent sodium current deactivation shift mechanism is demonstrated in Drosophila GABAergic neurons, not in mammalian nociceptors, so its relevance to neuropathic pain signalling is extrapolated\",\n    \"The context does not clarify whether post-injury conditions (e.g., inflammatory mediators) modulate Nav1.8 inactivation properties similarly to the described gain-of-function mutations\",\n    \"No data provided on how \u03b24 subunit expression levels change in uninjured axons after nerve injury, which would be critical for the proposed amplification mechanism\"\n  ],\n  \"mechanism_type\": \"channel block\"\n}\n```"
+    },
+    {
+      "query_id": "h3",
+      "query": "Describe the role of the DEKA selectivity filter in ion channel pharmacology.",
+      "primary_terms": [
+        "DEKA"
+      ],
+      "corpus_coverage": {
+        "DEKA": 0,
+        "selectivity filter": 0
+      },
+      "retrieval_coverage": {
+        "DEKA": false
+      },
+      "retrieved_chunk_ids": [
+        "pubmed_24297919_0",
+        "pubmed_30231997_1",
+        "pubmed_15277629_1",
+        "pubmed_24297919_1",
+        "pubmed_25556685_1",
+        "pubmed_18637833_0",
+        "pubmed_12086636_1"
+      ],
+      "call_error": null,
+      "parse_error": null,
+      "parsed": {
+        "hypothesis": "Mutations in the pore region encompassing the selectivity filter of voltage-gated sodium channels can alter ion selectivity and channel pharmacology, and the pharmacological impact of pore-region perturbations may be further modulated by accessory \u03b2-subunits (such as \u03b24) that allosterically influence toxin binding at or near the pore, suggesting that the selectivity filter environment is a composite determinant of both ion permeation fidelity and drug/toxin sensitivity.",
+        "supporting_chunk_ids": [
+          "pubmed_15277629_1",
+          "pubmed_24297919_0",
+          "pubmed_24297919_1"
+        ],
+        "confidence": "low",
+        "data_gaps": [
+          "No retrieved chunk explicitly discusses the DEKA selectivity filter motif or its direct interaction with pharmacological agents",
+          "The specific contribution of each DEKA residue to drug binding affinity or selectivity is not addressed in the context",
+          "No structural data on how pore-region mutations (e.g., R946C) alter the geometry of the selectivity filter relative to drug binding sites",
+          "The mechanism by which \u03b24 subunit modulation of toxin binding relates to the selectivity filter versus other pore-adjacent sites is not clarified"
+        ],
+        "mechanism_type": "channel block"
+      },
+      "grounding_rate": 1.0,
+      "unresolvable_ids": [],
+      "citation_flags": [
+        "single_modality: all resolved chunks are from 'pubmed' only"
+      ],
+      "verbatim_overlap_5gram": 0.0,
+      "plausibility": {
+        "verdict": "UNCERTAIN",
+        "reasoning": "",
+        "error": "LLM call failed after 3 attempts: list index out of range"
+      },
+      "failure_type": "data_gap",
+      "failure_reasoning": "Primary terms ['DEKA'] have zero corpus matches \u2014 information genuinely absent from corpus",
+      "raw_response": "I'll analyze the retrieved chunks step by step for relevance to the DEKA selectivity filter and ion channel pharmacology.\n\n**Step 1: Identify relevant chunks**\n\nThe DEKA selectivity filter is the ring of residues (Asp, Glu, Lys, Ala) in the pore region of voltage-gated sodium channels that determines Na+ selectivity. Let me check each chunk:\n\n- [pubmed_15277629_1]: Discusses mutations in the \"pore\" regions of SCN1A, specifically mentioning that a mutation in the pore region (R946C) may cause abnormal ion selectivity, and that more severe sodium channel dysfunctions including abnormal ion selectivity from pore region mutations may be involved in SMEI pathogenesis.\n- [pubmed_24297919_0] and [pubmed_24297919_1]: Discuss \u03b24 subunit modulation of SCN2A and its influence on toxin pharmacology, tissue-dependent variations in Nav channel pharmacology.\n- [pubmed_30231997_1]: Discusses arylsulfonamide/acylsulfonamide binding to voltage sensor domain 4, not the pore/selectivity filter.\n- Other chunks discuss SCN8A, SCN1A gain-of-function, and Nav1.7 \u2014 not directly about the DEKA filter.\n\n**Step 2: Key mechanistic claims**\n\nThe context provides limited direct information about the DEKA selectivity filter. The closest relevant claim is that pore region mutations can disrupt ion selectivity and are associated with more severe phenotypes [pubmed_15277629_1], and that \u03b2-subunits can alter toxin pharmacology at the pore [pubmed_24297919_0, pubmed_24297919_1].\n\n**Step 3: Synthesize hypothesis**\n\n**Step 4: Identify gaps**\n\nThe context does not explicitly discuss the DEKA motif, its direct role in drug binding, or how specific pharmacological agents interact with the selectivity filter.\n\n```json\n{\n  \"hypothesis\": \"Mutations in the pore region encompassing the selectivity filter of voltage-gated sodium channels can alter ion selectivity and channel pharmacology, and the pharmacological impact of pore-region perturbations may be further modulated by accessory \u03b2-subunits (such as \u03b24) that allosterically influence toxin binding at or near the pore, suggesting that the selectivity filter environment is a composite determinant of both ion permeation fidelity and drug/toxin sensitivity.\",\n  \"supporting_chunk_ids\": [\"pubmed_15277629_1\", \"pubmed_24297919_0\", \"pubmed_24297919_1\"],\n  \"confidence\": \"low\",\n  \"data_gaps\": [\n    \"No retrieved chunk explicitly discusses the DEKA selectivity filter motif or its direct interaction with pharmacological agents\",\n    \"The specific contribution of each DEKA residue to drug binding affinity or selectivity is not addressed in the context\",\n    \"No structural data on how pore-region mutations (e.g., R946C) alter the geometry of the selectivity filter relative to drug binding sites\",\n    \"The mechanism by which \u03b24 subunit modulation of toxin binding relates to the selectivity filter versus other pore-adjacent sites is not clarified\"\n  ],\n  \"mechanism_type\": \"channel block\"\n}\n```"
+    },
+    {
+      "query_id": "h4",
+      "query": "What is the evidence for SCN2A gain-of-function in autism spectrum disorder?",
+      "primary_terms": [
+        "SCN2A",
+        "autism"
+      ],
+      "corpus_coverage": {
+        "SCN2A": 36,
+        "autism": 10
+      },
+      "retrieval_coverage": {
+        "SCN2A": false,
+        "autism": true
+      },
+      "retrieved_chunk_ids": [
+        "pubmed_40048808_0",
+        "pubmed_35696452_4",
+        "pubmed_36868483_0",
+        "pubmed_34843701_0",
+        "pubmed_22914087_0",
+        "pubmed_22341965_0",
+        "pubmed_31904117_0"
+      ],
+      "call_error": null,
+      "parse_error": null,
+      "parsed": {
+        "hypothesis": "The retrieved context does not contain evidence regarding SCN2A gain-of-function in autism spectrum disorder; however, by analogy with the SCN1A literature provided, gain-of-function variants in voltage-gated sodium channels may contribute to ASD through disruption of the synaptic excitatory-inhibitory ratio, as SCN1A-related ASD is attributed to impaired GABAergic interneuron function and excitatory-inhibitory imbalance.",
+        "supporting_chunk_ids": [
+          "pubmed_40048808_0",
+          "pubmed_22914087_0",
+          "pubmed_22341965_0"
+        ],
+        "confidence": "low",
+        "data_gaps": [
+          "No retrieved chunks contain any information about SCN2A (Nav1.2) \u2014 all evidence pertains to SCN1A (Nav1.1)",
+          "No data on SCN2A gain-of-function biophysical properties or their association with ASD phenotypes",
+          "No information on whether SCN2A gain-of-function affects excitatory neurons differently from SCN1A effects on inhibitory interneurons",
+          "The analogy between SCN1A and SCN2A mechanisms is speculative given their distinct expression patterns in excitatory vs inhibitory neurons"
+        ],
+        "mechanism_type": null
+      },
+      "grounding_rate": 1.0,
+      "unresolvable_ids": [],
+      "citation_flags": [
+        "single_modality: all resolved chunks are from 'pubmed' only"
+      ],
+      "verbatim_overlap_5gram": 0.0,
+      "plausibility": {
+        "verdict": "UNCERTAIN",
+        "reasoning": "UNCERTAIN \u2014 While the analogy between SCN1A and SCN2A is intellectually reasonable, it is pharmacologically imprecise because SCN2A is predominantly expressed in excitatory pyramidal neurons (not GABAergic interneurons like SCN1A), so gain-of-function in SCN2A would directly increase excitatory neuron firing rather than impairing inhibition, meaning the mechanistic pathway to excitatory-inhibitory imbalance differs fundamentally, and without specific drug or target information the pharmacological plausibility cannot be fully assessed.",
+        "error": null
+      },
+      "failure_type": "pass",
+      "failure_reasoning": "Relevant chunks retrieved; output parsed, grounded, and plausible",
+      "raw_response": "I'll analyze the retrieved chunks step by step.\n\n**Step 1: Identify relevant chunks**\n\nThe query asks specifically about **SCN2A** gain-of-function in autism spectrum disorder. Let me examine each chunk:\n\n- All chunks discuss **SCN1A**, not **SCN2A**. These are different genes encoding different sodium channel alpha subunits (Nav1.1 vs Nav1.2).\n- Some chunks mention autism spectrum disorder (ASD) in the context of SCN1A (e.g., [pubmed_22914087_0], [pubmed_31904117_0], [pubmed_40048808_0]), but none discuss SCN2A.\n- [pubmed_35696452_4] and [pubmed_36868483_0] discuss SCN1A gain-of-function in epilepsy, not SCN2A gain-of-function in ASD.\n\n**Step 2: Key mechanistic claims**\n\nThe chunks provide information about:\n- SCN1A loss-of-function causing Dravet syndrome with ASD features via impaired interneuron excitability [pubmed_34843701_0], [pubmed_22341965_0]\n- SCN1A gain-of-function causing distinct epileptic encephalopathies [pubmed_35696452_4], [pubmed_36868483_0]\n- SCN1A haploinsufficiency leading to autistic-like behaviors in mice [pubmed_22914087_0]\n- Excitatory-inhibitory imbalance as a shared mechanism in epilepsy and ASD [pubmed_40048808_0]\n\n**Step 3 & 4: Synthesis and gaps**\n\nThe context does not contain information about SCN2A. I cannot generate a well-grounded hypothesis about SCN2A gain-of-function in ASD from these chunks.\n\n```json\n{\n  \"hypothesis\": \"The retrieved context does not contain evidence regarding SCN2A gain-of-function in autism spectrum disorder; however, by analogy with the SCN1A literature provided, gain-of-function variants in voltage-gated sodium channels may contribute to ASD through disruption of the synaptic excitatory-inhibitory ratio, as SCN1A-related ASD is attributed to impaired GABAergic interneuron function and excitatory-inhibitory imbalance.\",\n  \"supporting_chunk_ids\": [\"pubmed_40048808_0\", \"pubmed_22914087_0\", \"pubmed_22341965_0\"],\n  \"confidence\": \"low\",\n  \"data_gaps\": [\n    \"No retrieved chunks contain any information about SCN2A (Nav1.2) \u2014 all evidence pertains to SCN1A (Nav1.1)\",\n    \"No data on SCN2A gain-of-function biophysical properties or their association with ASD phenotypes\",\n    \"No information on whether SCN2A gain-of-function affects excitatory neurons differently from SCN1A effects on inhibitory interneurons\",\n    \"The analogy between SCN1A and SCN2A mechanisms is speculative given their distinct expression patterns in excitatory vs inhibitory neurons\"\n  ],\n  \"mechanism_type\": null\n}\n```"
+    },
+    {
+      "query_id": "h5",
+      "query": "How do spider toxins targeting Nav1.7 compare to small-molecule blockers?",
+      "primary_terms": [
+        "spider"
+      ],
+      "corpus_coverage": {
+        "spider": 2,
+        "Nav1.7": 0
+      },
+      "retrieval_coverage": {
+        "spider": false
+      },
+      "retrieved_chunk_ids": [
+        "pubmed_17367951_0",
+        "pubmed_34983286_0",
+        "pubmed_30231997_0",
+        "pubmed_30617209_2",
+        "pubmed_37498871_0",
+        "pubmed_38289338_0",
+        "pubmed_37921732_0"
+      ],
+      "call_error": null,
+      "parse_error": null,
+      "parsed": {
+        "hypothesis": "Small-molecule SCN9A blockers that bind the voltage sensor domain 4 (VSD4) surface achieve isoform selectivity and steeply state-dependent block analogous to gating-modifier mechanisms, but their clinical translation has been limited by insufficient target engagement unless long residence times are achieved, suggesting that spider toxin-like gating-modifier strategies targeting voltage sensor domains may similarly require prolonged binding kinetics to translate biophysical selectivity into robust in vivo analgesic efficacy.",
+        "supporting_chunk_ids": [
+          "pubmed_30231997_0",
+          "pubmed_34983286_0",
+          "pubmed_37498871_0"
+        ],
+        "confidence": "low",
+        "data_gaps": [
+          "The retrieved context contains no direct information about spider toxins (e.g., ProTx-II, HwTx-IV) targeting Nav1.7, preventing a grounded comparison",
+          "No data on spider toxin binding sites (e.g., VSD2 vs VSD4) or their residence times are present in the context",
+          "No head-to-head pharmacological or biophysical comparisons between peptide toxins and small-molecule SCN9A blockers are available in the retrieved chunks",
+          "Clinical trial outcomes for VSD4-targeting small molecules are not detailed in the context"
+        ],
+        "mechanism_type": "gating shift"
+      },
+      "grounding_rate": 1.0,
+      "unresolvable_ids": [],
+      "citation_flags": [
+        "single_modality: all resolved chunks are from 'pubmed' only"
+      ],
+      "verbatim_overlap_5gram": 0.0,
+      "plausibility": {
+        "verdict": "PLAUSIBLE",
+        "reasoning": "PLAUSIBLE \u2014 The hypothesis is well-supported: small-molecule Nav1.7 (SCN9A) VSD4 binders (e.g., GX-936/GDC-0276 class) do achieve isoform selectivity through state-dependent interactions with the S1\u2013S4 voltage-sensor domain and exhibit gating-modifier-like shifts in voltage dependence of inactivation, and clinical failures have indeed been attributed in part to insufficient target engagement and rapid dissociation kinetics, making the extrapolation that spider toxin-inspired gating-modifier strategies would similarly require prolonged residence times for in vivo efficacy a pharmacologically reasonable and mechanistically coherent proposition.",
+        "error": null
+      },
+      "failure_type": "retrieval_failure",
+      "failure_reasoning": "Terms ['spider'] present in corpus ([2] chunks) but none appeared in top-k retrieved set",
+      "raw_response": "I'll analyze the retrieved chunks step by step.\n\n**Step 1: Identify relevant chunks**\n\nThe query asks about spider toxins targeting Nav1.7 (SCN9A) compared to small-molecule blockers. Let me check each chunk:\n\n- [pubmed_30231997_0]: Directly relevant \u2014 discusses selective SCN9A antagonists (arylsulfonamides and acylsulfonamides) that target voltage sensor domain 4 (VSD4) to achieve selectivity and state-dependent block. Notes that earlier SCN9A-selective blockers required high IC50 multiples, and improved efficacy correlates with slow dissociation.\n- [pubmed_34983286_0]: Relevant \u2014 discusses indirect targeting of SCN9A via CRMP2-Ubc9 interaction disruption, noting that \"targeting this channel directly has failed.\"\n- [pubmed_37498871_0]: Relevant \u2014 discusses the CRMP2 regulatory sequence (CRS) unique to SCN9A and indirect targeting strategy, again noting clinical failure of direct small molecules.\n- [pubmed_17367951_0]: Somewhat relevant \u2014 discusses lack of subtype-selective sodium channel blockers.\n- [pubmed_30617209_2]: Marginally relevant \u2014 discusses SCN10A resurgent currents.\n- [pubmed_38289338_0]: Not directly relevant (SCN8A/Slack coupling).\n- [pubmed_37921732_0]: Not directly relevant (brain morphology in SFN).\n\n**Step 2: Key mechanistic claims**\n\n- Arylsulfonamides and acylsulfonamides target VSD4 surface to achieve high selectivity among sodium channel isoforms [pubmed_30231997_0].\n- These compounds show steeply state-dependent block [pubmed_30231997_0].\n- Improved efficacy correlates with very slow dissociation (long residence time) [pubmed_30231997_0].\n- Direct small-molecule targeting of SCN9A has not been clinically successful [pubmed_34983286_0, pubmed_37498871_0].\n- Indirect approaches (CRMP2 SUMOylation inhibition) have emerged as alternatives [pubmed_34983286_0, pubmed_37498871_0].\n\n**Step 3: Synthesize hypothesis**\n\nThe context mentions VSD4-targeting arylsulfonamides \u2014 notably, spider toxins like ProTx-II and HwTx-IV are known to target VSD2 of Nav1.7, but the context does not explicitly discuss spider toxins. However, the VSD4-targeting sulfonamides described share a gating-modifier mechanism conceptually similar to spider toxins. The context is insufficient to make direct comparisons with spider toxins.\n\n**Step 4: Identify gaps**\n\nThe retrieved context does not contain specific information about spider toxins targeting Nav1.7.\n\n```json\n{\n  \"hypothesis\": \"Small-molecule SCN9A blockers that bind the voltage sensor domain 4 (VSD4) surface achieve isoform selectivity and steeply state-dependent block analogous to gating-modifier mechanisms, but their clinical translation has been limited by insufficient target engagement unless long residence times are achieved, suggesting that spider toxin-like gating-modifier strategies targeting voltage sensor domains may similarly require prolonged binding kinetics to translate biophysical selectivity into robust in vivo analgesic efficacy.\",\n  \"supporting_chunk_ids\": [\"pubmed_30231997_0\", \"pubmed_34983286_0\", \"pubmed_37498871_0\"],\n  \"confidence\": \"low\",\n  \"data_gaps\": [\n    \"The retrieved context contains no direct information about spider toxins (e.g., ProTx-II, HwTx-IV) targeting Nav1.7, preventing a grounded comparison\",\n    \"No data on spider toxin binding sites (e.g., VSD2 vs VSD4) or their residence times are present in the context\",\n    \"No head-to-head pharmacological or biophysical comparisons between peptide toxins and small-molecule SCN9A blockers are available in the retrieved chunks\",\n    \"Clinical trial outcomes for VSD4-targeting small molecules are not detailed in the context\"\n  ],\n  \"mechanism_type\": \"gating shift\"\n}\n```"
+    }
+  ]
+}

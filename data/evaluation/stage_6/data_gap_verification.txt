@@ -1,0 +1,47 @@
+Spot Check 1 — Data Gap Verification
+Check 5 model-reported gaps vs. corpus reality
+
+Gap terms searched (case-insensitive) across all 562 chunks in data/processed/chunks.json.
+Q3 retrieved set: pubmed_26555147_0, pubmed_30231997_0, pubmed_18489610_0, pubmed_30231997_1,
+                  pubmed_20709545_0, pubmed_35696452_4, pubmed_22591328_0
+Q4 retrieved set: pubmed_30231997_0, pubmed_34011048_0, pubmed_30231997_1, pubmed_30306515_0,
+                  pubmed_25556685_1, pubmed_21504426_0, pubmed_16210358_3
+
+TERM: "binding constant"
+  corpus matches : 0
+  verdict        : CONFIRMED DATA GAP — term absent from entire corpus
+  implication    : model self-reporting is accurate; this is a genuine corpus limitation
+
+TERM: "dose-response"
+  corpus matches : 0
+  verdict        : CONFIRMED DATA GAP — term absent from entire corpus
+  implication    : model self-reporting is accurate; IC50/dose-response data exists only as
+                   Morgan fingerprint vectors (compound_features/), not in text chunks
+
+TERM: "state-dependent"
+  corpus matches : 5 (sources: pubmed)
+  in Q3 retrieved set : YES — pubmed_30231997_0, pubmed_30231997_1 (both cited by model)
+  in Q4 retrieved set : YES — pubmed_30231997_0, pubmed_30231997_1 (both cited by model)
+  verdict        : INACCURATE GAP CLAIM — term appears in retrieved AND cited chunks
+  implication    : model reported "state-dependent binding" as a gap, but the concept IS
+                   present in the retrieved context. The gap is one of *depth*, not *absence*:
+                   the chunks mention state-dependent block but do not provide quantitative
+                   rate constants. The model is conflating "mentioned but not quantified"
+                   with "absent". Flag for manual verification at Check 6.
+
+TERM: "isoform"
+  corpus matches : 20 (sources: pubmed, pdb)
+  in Q3 retrieved set : YES — pubmed_30231997_0, pubmed_30231997_1 (both cited by model)
+  in Q4 retrieved set : YES — pubmed_30231997_0, pubmed_30231997_1 (both cited by model)
+  verdict        : INACCURATE GAP CLAIM — same pattern as "state-dependent"
+  implication    : isoform selectivity IS discussed in the retrieved context; model is reporting
+                   insufficient *specificity* (no head-to-head Nav1.1 vs Nav1.2 IC50 table)
+                   rather than true absence. This distinction matters at Check 7: it is a
+                   generation failure (model under-weighted context) not a data gap.
+
+SUMMARY
+  Confirmed data gaps (absent from corpus)  : binding constant, dose-response (2/4)
+  Inaccurate gap claims (present in context): state-dependent, isoform (2/4)
+  Retrieval failures masquerading as gaps   : none
+  Action for Check 6: annotate Q3/Q4 outputs with "depth_gap" not "corpus_gap" for
+  state-dependent and isoform; reserve "corpus_gap" for binding constant and dose-response.

@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-04-22T14:47:13.865831",
+  "record_counts": {
+    "pubmed_abstracts": 198,
+    "uniprot_entries": 7,
+    "pdb_structures": 30,
+    "chembl_compounds": 980
+  },
+  "chunks": {
+    "total": 562,
+    "checked_sources": "pubmed,uniprot",
+    "checked_count": 532,
+    "min_tokens": 100,
+    "max_tokens": 300,
+    "outlier_rate": 0.0113,
+    "outlier_count": 6,
+    "token_min": 45,
+    "token_max": 292,
+    "token_mean": 173.9,
+    "token_median": 176.0,
+    "per_source": {
+      "pubmed": {
+        "chunk_count": 509,
+        "token_min": 45,
+        "token_max": 292,
+        "token_mean": 174.3,
+        "token_median": 176,
+        "outlier_count": 6,
+        "outlier_rate": 0.0118
+      },
+      "uniprot": {
+        "chunk_count": 23,
+        "token_min": 109,
+        "token_max": 207,
+        "token_mean": 166.1,
+        "token_median": 175,
+        "outlier_count": 0,
+        "outlier_rate": 0.0
+      },
+      "pdb": {
+        "chunk_count": 30,
+        "token_min": 50,
+        "token_max": 94,
+        "token_mean": 74.7,
+        "token_median": 78.0,
+        "outlier_count": 30,
+        "outlier_rate": 1.0
+      }
+    }
+  },
+  "fingerprints": {
+    "total": 980,
+    "success": 980,
+    "conversion_rate": 1.0
+  },
+  "flags": [],
+  "passed": true
+}

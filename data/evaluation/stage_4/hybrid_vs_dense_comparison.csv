@@ -1,0 +1,21 @@
+query,category,dense_hit5,hybrid_hit5,bm25_rank,dense_rank,rrf_rank,failure_type
+SCN1A Nav1.1 voltage-gated sodium channel function,gene_function,True,True,1,5,1,none
+SCN2A Nav1.2 brain sodium channel expression,gene_function,True,True,1,2,1,none
+SCN3A Nav1.3 developing brain neonatal sodium channel,gene_function,False,True,1,,1,dense_only_miss
+SCN4A Nav1.4 skeletal muscle sodium channel excitability,gene_function,True,True,1,5,1,none
+SCN5A Nav1.5 cardiac sodium channel myocardium,gene_function,True,True,1,1,1,none
+SCN8A Nav1.6 neuronal excitability action potential threshol,gene_function,False,True,1,,3,dense_only_miss
+SCN9A Nav1.7 nociceptor pain signalling,gene_function,True,True,1,1,1,none
+Dravet syndrome SCN1A loss of function epileptic encephalopa,disease,True,True,1,1,1,none
+long QT syndrome SCN5A cardiac arrhythmia mutation,disease,True,True,1,1,1,none
+erythromelalgia congenital insensitivity to pain SCN9A sodiu,disease,True,True,1,1,1,none
+lamotrigine sodium channel anticonvulsant mechanism of actio,drug_mechanism,True,True,1,1,1,none
+phenytoin voltage-gated sodium channel inactivation antiepil,drug_mechanism,False,True,1,,2,dense_only_miss
+lidocaine local anesthetic sodium channel block,drug_mechanism,False,False,4,,6,retrieval_limit
+carbamazepine use-dependent sodium channel block epilepsy,drug_mechanism,False,True,2,,5,dense_only_miss
+mexiletine sodium channel cardiac ventricular arrhythmia,drug_mechanism,False,False,4,,,corpus_limit
+sodium channel fast inactivation ball and chain mechanism,mechanism,True,True,1,1,1,none
+action potential depolarization voltage-gated channel gating,mechanism,True,True,1,1,1,none
+sodium channel IC50 patch clamp electrophysiology assay,mechanism,False,True,1,,2,dense_only_miss
+cryo-EM structure voltage-gated sodium channel resolution,structure,True,True,1,1,1,none
+calmodulin sodium channel C-terminal domain crystal structur,structure,True,True,1,1,1,none

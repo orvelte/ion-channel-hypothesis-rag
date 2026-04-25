@@ -1,0 +1,21 @@
+{
+  "query_id": "q5",
+  "query": "What is the mechanism of lidocaine block of sodium channels?",
+  "control_type": "retrieval_limit",
+  "cited_chunk_ids": [
+    "pubmed_25556685_1",
+    "pubmed_34011048_0",
+    "pubmed_30231997_0",
+    "pubmed_30231997_1",
+    "pubmed_18342948_2",
+    "pubmed_33651714_1",
+    "pubmed_34011048_1"
+  ],
+  "grounding_specificity": "PLACEHOLDER \u2014 fill in manually after reviewing q5_lidocaine_cited_chunks.txt",
+  "grounding_specificity_options": [
+    "lidocaine_specific: cited chunks are lidocaine-specific records",
+    "generic_relevant: cited chunks are generic local anaesthetic or Nav channel chunks that are relevant but not lidocaine-specific",
+    "mixed: combination of both"
+  ],
+  "implication": "PLACEHOLDER \u2014 fill in manually"
+}

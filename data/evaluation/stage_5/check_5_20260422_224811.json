@@ -1,0 +1,400 @@
+{
+  "timestamp": "2026-04-22T22:48:11.949686",
+  "embedding_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "llm_model": "claude-opus-4-6",
+  "retrieval_k": 7,
+  "n_queries": 5,
+  "variants": [
+    "direct",
+    "cot"
+  ],
+  "variant_metrics": {
+    "direct": {
+      "n_queries": 5,
+      "call_errors": 5,
+      "parse_success_rate": 0.0,
+      "mean_word_count": 0.0,
+      "mean_citation_rate": 0.0,
+      "ungrounded_count": 0,
+      "ungrounded_queries": []
+    },
+    "cot": {
+      "n_queries": 5,
+      "call_errors": 5,
+      "parse_success_rate": 0.0,
+      "mean_word_count": 0.0,
+      "mean_citation_rate": 0.0,
+      "ungrounded_count": 0,
+      "ungrounded_queries": []
+    }
+  },
+  "query_results": [
+    {
+      "query": "How does lamotrigine modulate SCN1A gating kinetics?",
+      "retrieved_chunk_ids": [
+        "pubmed_28490751_2",
+        "pubmed_28965169_0",
+        "pubmed_35696452_3",
+        "pubmed_40048808_4",
+        "pubmed_23086956_3",
+        "pubmed_31041876_1",
+        "pubmed_38289338_0"
+      ],
+      "context_snippets": [
+        {
+          "chunk_id": "pubmed_28490751_2",
+          "source": "pubmed",
+          "text_snippet": "Additionally, chronically GS967-treated Scn1a +/- mice exhibited normalized pyramidal neuron sodium current density and "
+        },
+        {
+          "chunk_id": "pubmed_28965169_0",
+          "source": "pubmed",
+          "text_snippet": "Voltage-Gated Sodium Channel \u03b2 Subunits and Their Related Diseases. Voltage-gated sodium channels are protein complexes "
+        },
+        {
+          "chunk_id": "pubmed_35696452_3",
+          "source": "pubmed",
+          "text_snippet": "Functional studies of both epilepsy and familial hemiplegic migraine type 3 variants reveal alterations of gating proper"
+        },
+        {
+          "chunk_id": "pubmed_40048808_4",
+          "source": "pubmed",
+          "text_snippet": "SIGNIFICANCE STATEMENT: Modern medicine relies on ion channels and G protein-coupled receptors (GPCRs) as key targets. I"
+        },
+        {
+          "chunk_id": "pubmed_23086956_3",
+          "source": "pubmed",
+          "text_snippet": "Although phenytoin increased surface expression of G1674R, channel function was not restored, suggesting that this mutat"
+        },
+        {
+          "chunk_id": "pubmed_31041876_1",
+          "source": "pubmed",
+          "text_snippet": "Mutations in proteins that regulate trafficking or functional properties of Navs could expand the spectrum of patients w"
+        },
+        {
+          "chunk_id": "pubmed_38289338_0",
+          "source": "pubmed",
+          "text_snippet": "Coupling of Slack and SCN8A sensitizes Slack to quinidine blockade and guides anti-seizure strategy development. Quinidi"
+        }
+      ],
+      "variants": {
+        "direct": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        },
+        "cot": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        }
+      }
+    },
+    {
+      "query": "What structural features of Nav1.7 make it a target for neuropathic pain?",
+      "retrieved_chunk_ids": [
+        "pubmed_30617209_3",
+        "pubmed_37846879_3",
+        "pubmed_32569093_0",
+        "pubmed_17145494_0",
+        "pubmed_34983286_0",
+        "pubmed_24440715_1",
+        "pubmed_30231997_0"
+      ],
+      "context_snippets": [
+        {
+          "chunk_id": "pubmed_30617209_3",
+          "source": "pubmed",
+          "text_snippet": "Together, our data demonstrate that open-channel block of TTX-resistant currents, enhanced by gain-of-function mutations"
+        },
+        {
+          "chunk_id": "pubmed_37846879_3",
+          "source": "pubmed",
+          "text_snippet": "These actions of Ih limit the firing of DRG neurons expressing WT SCN9A and reverse the hyperexcitability of DRG neurons"
+        },
+        {
+          "chunk_id": "pubmed_32569093_0",
+          "source": "pubmed",
+          "text_snippet": "Studies on CRMP2 SUMOylation-deficient transgenic mice identify sex-specific SCN9A regulation in the pathogenesis of chr"
+        },
+        {
+          "chunk_id": "pubmed_17145494_0",
+          "source": "pubmed",
+          "text_snippet": "Painful channels. Paroxysmal extreme pain disorder (PEPD), previously known as familial rectal pain (FRP, OMIM 167400), "
+        },
+        {
+          "chunk_id": "pubmed_34983286_0",
+          "source": "pubmed",
+          "text_snippet": "Small molecule targeting SCN9A via inhibition of the CRMP2-Ubc9 interaction reduces pain in chronic constriction injury "
+        },
+        {
+          "chunk_id": "pubmed_24440715_1",
+          "source": "pubmed",
+          "text_snippet": "Mechanical and cold allodynia required distinct sets of neurons and different repertoires of sodium channels depending o"
+        },
+        {
+          "chunk_id": "pubmed_30231997_0",
+          "source": "pubmed",
+          "text_snippet": "Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. S"
+        }
+      ],
+      "variants": {
+        "direct": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        },
+        "cot": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        }
+      }
+    },
+    {
+      "query": "Compare the selectivity profiles of carbamazepine and phenytoin on sodium channels.",
+      "retrieved_chunk_ids": [
+        "pubmed_26555147_0",
+        "pubmed_18489610_0",
+        "pubmed_30231997_0",
+        "pubmed_30231997_1",
+        "pubmed_35696452_4",
+        "pubmed_20709545_0",
+        "pubmed_22591328_0"
+      ],
+      "context_snippets": [
+        {
+          "chunk_id": "pubmed_26555147_0",
+          "source": "pubmed",
+          "text_snippet": "Polymorphic Variants of SCN1A and EPHX1 Influence Plasma Carbamazepine Concentration, Metabolism and Pharmacoresistance "
+        },
+        {
+          "chunk_id": "pubmed_18489610_0",
+          "source": "pubmed",
+          "text_snippet": "Association between SCN1A polymorphism and carbamazepine-resistant epilepsy. To establish whether the SCN1A IVS5-91 G > "
+        },
+        {
+          "chunk_id": "pubmed_30231997_0",
+          "source": "pubmed",
+          "text_snippet": "Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. S"
+        },
+        {
+          "chunk_id": "pubmed_30231997_1",
+          "source": "pubmed",
+          "text_snippet": "Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domai"
+        },
+        {
+          "chunk_id": "pubmed_35696452_4",
+          "source": "pubmed",
+          "text_snippet": "Clinically, 13 out of 16 (81%) gain of function variants were associated with a reduction in seizures in response to sod"
+        },
+        {
+          "chunk_id": "pubmed_20709545_0",
+          "source": "pubmed",
+          "text_snippet": "Substituted biaryl pyrazoles as sodium channel blockers. Voltage-gated sodium channels have been shown to play a critica"
+        },
+        {
+          "chunk_id": "pubmed_22591328_0",
+          "source": "pubmed",
+          "text_snippet": "Effects of SCN1A and GABA receptor genetic polymorphisms on carbamazepine tolerability and efficacy in Chinese patients "
+        }
+      ],
+      "variants": {
+        "direct": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        },
+        "cot": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        }
+      }
+    },
+    {
+      "query": "What is the mechanism of use-dependent block by local anaesthetics?",
+      "retrieved_chunk_ids": [
+        "pubmed_30231997_0",
+        "pubmed_34011048_0",
+        "pubmed_30231997_1",
+        "pubmed_30306515_0",
+        "pubmed_25556685_1",
+        "pubmed_21504426_0",
+        "pubmed_16210358_3"
+      ],
+      "context_snippets": [
+        {
+          "chunk_id": "pubmed_30231997_0",
+          "source": "pubmed",
+          "text_snippet": "Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. S"
+        },
+        {
+          "chunk_id": "pubmed_34011048_0",
+          "source": "pubmed",
+          "text_snippet": "Effects of SCN1A and SCN2A polymorphisms on responsiveness to valproic acid monotherapy in epileptic children: A protoco"
+        },
+        {
+          "chunk_id": "pubmed_30231997_1",
+          "source": "pubmed",
+          "text_snippet": "Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domai"
+        },
+        {
+          "chunk_id": "pubmed_30306515_0",
+          "source": "pubmed",
+          "text_snippet": "Advances in Experimental Medicine and Biology: Intrafascicular Local Anesthetic Injection Damages Peripheral Nerve-Induc"
+        },
+        {
+          "chunk_id": "pubmed_25556685_1",
+          "source": "pubmed",
+          "text_snippet": "Functional analyses have shown that these mutations produce a spectrum of pro-excitatory changes in channel biophysics, "
+        },
+        {
+          "chunk_id": "pubmed_21504426_0",
+          "source": "pubmed",
+          "text_snippet": "Dravet syndrome and SCN1A gene mutation related-epilepsies: cognitive impairment and its determinants. Some studies have"
+        },
+        {
+          "chunk_id": "pubmed_16210358_3",
+          "source": "pubmed",
+          "text_snippet": "Three mutants (V1611F, P1632S and F1808L) exhibited persistent sodium current ranging from approximately 1-3% of peak cu"
+        }
+      ],
+      "variants": {
+        "direct": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        },
+        "cot": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        }
+      }
+    },
+    {
+      "query": "How do SCN1A loss-of-function mutations lead to Dravet syndrome?",
+      "retrieved_chunk_ids": [
+        "pubmed_36868483_0",
+        "pubmed_18342948_1",
+        "pubmed_37171678_0",
+        "pubmed_24434335_0",
+        "pubmed_30659983_0",
+        "pubmed_20194124_3",
+        "pubmed_18342948_2"
+      ],
+      "context_snippets": [
+        {
+          "chunk_id": "pubmed_36868483_0",
+          "source": "pubmed",
+          "text_snippet": "Biophysical characterization and modelling of SCN1A gain-of-function predicts interneuron hyperexcitability and a predis"
+        },
+        {
+          "chunk_id": "pubmed_18342948_1",
+          "source": "pubmed",
+          "text_snippet": "More than 200 mutations in the SCN1A alpha subtype have been linked to inherited epilepsy syndromes, ranging in severity"
+        },
+        {
+          "chunk_id": "pubmed_37171678_0",
+          "source": "pubmed",
+          "text_snippet": "Idealized multiple-timescale model of cortical spreading depolarization initiation and pre-epileptic hyperexcitability c"
+        },
+        {
+          "chunk_id": "pubmed_24434335_0",
+          "source": "pubmed",
+          "text_snippet": "Strain- and age-dependent hippocampal neuron sodium currents correlate with epilepsy severity in Dravet syndrome mice. H"
+        },
+        {
+          "chunk_id": "pubmed_30659983_0",
+          "source": "pubmed",
+          "text_snippet": "A two-hit story: Seizures and genetic mutation interaction sets phenotype severity in SCN1A epilepsies. SCN1A (SCN1A sod"
+        },
+        {
+          "chunk_id": "pubmed_20194124_3",
+          "source": "pubmed",
+          "text_snippet": "Familial febrile seizures is caused by mild loss-of-function mutations in SCN1A channels; mutations in these channels ar"
+        },
+        {
+          "chunk_id": "pubmed_18342948_2",
+          "source": "pubmed",
+          "text_snippet": "Studies using heterologous expression and functional analysis of recombinant SCN1A channels suggest that epilepsy mutati"
+        }
+      ],
+      "variants": {
+        "direct": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        },
+        "cot": {
+          "raw_response": "",
+          "call_error": "LLM call failed after 3 attempts: \"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+          "parse_error": "Could not parse JSON from response (len=0)",
+          "parsed": null,
+          "word_count": 0,
+          "citation_rate": 0.0,
+          "has_any_citation": false,
+          "hallucination_manual": null,
+          "hallucination_notes": ""
+        }
+      }
+    }
+  ],
+  "flags": [],
+  "passed": true
+}

@@ -1,0 +1,37 @@
+# Core
+requests>=2.31
+pydantic>=2.0
+pyyaml>=6.0
+python-dotenv>=1.0
+tqdm>=4.66
+
+# Bio / chem
+biopython>=1.83
+rdkit>=2023.9.1
+chembl-webresource-client>=0.10.9
+
+# ML / embeddings
+transformers>=4.40
+torch>=2.2
+faiss-cpu>=1.8
+
+# Vector store (alternative to raw FAISS)
+chromadb>=0.5
+
+# LLM clients
+anthropic>=0.26
+openai>=1.30
+
+# Sparse retrieval
+rank_bm25>=0.2
+
+# Evaluation
+ragas>=0.1
+
+# Notebooks
+jupyter>=1.0
+ipykernel>=6.29
+
+# Testing
+pytest>=7.4
+pytest-cov>=4.1

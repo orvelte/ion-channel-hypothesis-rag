@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-04-22T09:38:14.892463",
+  "record_counts": {
+    "chembl": 0,
+    "uniprot": 7,
+    "pdb": 20,
+    "pubmed": 196
+  },
+  "source_errors": {
+    "chembl": "HTTPSConnectionPool(host='www.ebi.ac.uk', port=443): Read timed out. (read timeout=30)"
+  },
+  "checks": {
+    "null_rates": {
+      "chembl.chembl_id": 1.0,
+      "chembl.smiles": 1.0,
+      "chembl.standard_value": 1.0,
+      "chembl.standard_units": 1.0,
+      "chembl.standard_type": 1.0,
+      "chembl.target_chembl_id": 1.0,
+      "chembl.assay_chembl_id": 1.0,
+      "uniprot.uniprot_id": 0.0,
+      "uniprot.gene_name": 0.0,
+      "uniprot.sequence": 0.0,
+      "uniprot.protein_name": 0.0,
+      "uniprot.organism": 0.0
+    },
+    "smiles_parse_rate": "n/a (no ChEMBL data)",
+    "smiles_parse_failure_examples": [],
+    "chembl_to_uniprot_coverage": "skipped (ChEMBL API unavailable)",
+    "pdb_to_uniprot_coverage": 0.0,
+    "schema_summary": {
+      "chembl_unique_molecules": 0,
+      "chembl_unique_targets": 0,
+      "chembl_standard_types": [],
+      "uniprot_genes": [
+        "SCN1A",
+        "SCN2A",
+        "SCN10A",
+        "SCN4A",
+        "SCN5A",
+        "SCN8A",
+        "SCN9A"
+      ],
+      "uniprot_with_function_annotation": 7,
+      "pdb_experimental_methods": [
+        "ELECTRON MICROSCOPY",
+        "SOLID-STATE NMR",
+        "SOLUTION NMR",
+        "X-RAY DIFFRACTION"
+      ],
+      "pdb_with_ligands": 0,
+      "pubmed_year_range": [
+        2025,
+        2026
+      ],
+      "pubmed_with_mesh": 194
+    }
+  },
+  "flags": [
+    "ChEMBL API unavailable: HTTPSConnectionPool(host='www.ebi.ac.uk', port=443): Read timed out. (read timeout=30)",
+    "null rate chembl.chembl_id = 100.0% > threshold 5%",
+    "null rate chembl.smiles = 100.0% > threshold 5%",
+    "null rate chembl.standard_value = 100.0% > threshold 5%",
+    "null rate chembl.standard_units = 100.0% > threshold 5%",
+    "null rate chembl.standard_type = 100.0% > threshold 5%",
+    "null rate chembl.target_chembl_id = 100.0% > threshold 5%",
+    "null rate chembl.assay_chembl_id = 100.0% > threshold 5%",
+    "PDB\u2192UniProt cross-ref coverage = 0.0% < 80%"
+  ],
+  "passed": false
+}

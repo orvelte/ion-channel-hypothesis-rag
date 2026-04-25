@@ -1,0 +1,36 @@
+=== Q5 (benchmark): lidocaine negative control ===
+
+[chunk_id: pubmed_25556685_1]
+source: pubmed | token_count: 105
+text: Functional analyses have shown that these mutations produce a spectrum of pro-excitatory changes in channel biophysics, with the shared outcome at the cellular level of dorsal root ganglion hyperexcitability. Reduced neurite outgrowth may be another consequence of sodium channel mutations, and possible therapeutic strategies include blockade of sodium channels or block of reverse operation of the sodium-calcium exchanger. Increased understanding of the pathophysiology of painful peripheral neuropathy offers new targets that may provide a basis for more effective treatment.
+
+
+[chunk_id: pubmed_34011048_0]
+source: pubmed | token_count: 108
+text: Effects of SCN1A and SCN2A polymorphisms on responsiveness to valproic acid monotherapy in epileptic children: A protocol for systematic review and meta-analysis. : The gene mutation of coding sodium channel is one of the most important mechanisms in the pathogenesis of epilepsy. There exists a large inter-individual variation in the efficacy of valproic acid (VPA) against epilepsy. What are the genetic polymorphism influences of sodium channels on VPA response is still under discussion.
+
+
+[chunk_id: pubmed_30231997_0]
+source: pubmed | token_count: 195
+text: Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. Selective block of SCN9A promises to produce non-narcotic analgesic activity without motor or cognitive impairment. Several SCN9A-selective blockers have been reported, but efficacy in animal pain models required high multiples of the IC50 for channel block. Here, we report a target engagement assay using transgenic mice that has enabled the development of a second generation of selective SCN9A inhibitors that show robust analgesic activity in inflammatory and neuropathic pain models at low multiples of the IC50. Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel.
+
+
+[chunk_id: pubmed_30231997_1]
+source: pubmed | token_count: 104
+text: Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel. Chronic dosing increases compound potency about 10-fold, possibly due to reversal of sensitization arising during chronic injury, and provides efficacy that persists long after the compound has cleared from plasma.
+
+
+[chunk_id: pubmed_18342948_2]
+source: pubmed | token_count: 150
+text: Studies using heterologous expression and functional analysis of recombinant SCN1A channels suggest that epilepsy mutations in SCN1A may cause either gain-of-function or loss-of-function effects that are consistent with either increased or decreased neuronal excitability. How these diverse effects lead to epilepsy is poorly understood. This review summarizes the data on sodium channel mutations and epilepsy and builds a case for the hypothesis that most SCN1A mutations have their ultimate epileptogenic effects by reducing SCN1A-mediated whole cell sodium currents in GABAergic neurons, resulting in widespread loss of brain inhibition, an ideal background for the genesis of epileptic seizures.
+
+
+[chunk_id: pubmed_33651714_1]
+source: pubmed | token_count: 176
+text: Electrophysiological studies indicate that Nae1 deletion reduced PVIN excitability and GABA release and consequently increased the network excitability of pyramidal neurons (PyNs). Further analysis revealed a reduction in sodium-current density, not a change in channel property, in mutant PVINs and decreased SCN1A protein levels. These results suggest that insufficient neddylation in PVINs reduces SCN1A stability and thus the excitability of PVINs; the ensuing increased PyN activity causes seizures in mice. Consistently, SCN1A was found reduced by proteomic analysis that revealed abnormality in synapses and metabolic pathways. Our findings describe a role of neddylation in maintaining SCN1A stability for PVIN excitability and reveal what we believe is a new mechanism in the pathogenesis of epilepsy.
+
+
+[chunk_id: pubmed_34011048_1]
+source: pubmed | token_count: 153
+text: There exists a large inter-individual variation in the efficacy of valproic acid (VPA) against epilepsy. What are the genetic polymorphism influences of sodium channels on VPA response is still under discussion. In this study, a meta-analysis was used to further explore the effects of SCN1A and SCN2A gene polymorphism on VPA response in children with epilepsy. : The PubMed, EMBASE, Web of Science, Chinese National Knowledge Infrastructure, Chinese Science and Technique Journals Database, China Biology Medicine disc, and Wan Fang Database were searched up to April 2021 for appropriate studies regarding the association between SCN1A and SCN2A gene polymorphism on VPA response in children suffering from epilepsy.
+

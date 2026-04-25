@@ -1,0 +1,10 @@
+Failure taxonomy — Check 4 hybrid retrieval (20-query test set)
+
+none (hit):              18/20
+dense_only_miss (fixed):  5/20  [SCN3A, SCN8A, phenytoin, carbamazepine, IC50/patch clamp]
+retrieval_limit:          1/20  [lidocaine — chunk exists, BM25 rank 4, RRF rank 7]
+corpus_limit:             1/20  [mexiletine — 1 chunk in corpus, RRF score 0.0289]
+
+Lidocaine included in Stage 6 end-to-end benchmark as a negative control.
+Expected behaviour: hypothesis generated but grounding will be weak or absent.
+Mexiletine excluded from benchmark — insufficient corpus coverage for meaningful evaluation.

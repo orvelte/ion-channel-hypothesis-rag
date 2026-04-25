@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-04-22T14:37:34.119753",
+  "record_counts": {
+    "pubmed_abstracts": 198,
+    "uniprot_entries": 7,
+    "pdb_structures": 30,
+    "chembl_compounds": 980
+  },
+  "chunks": {
+    "total": 497,
+    "outlier_rate": 0.4266,
+    "outlier_count": 212,
+    "token_min": 6,
+    "token_max": 200,
+    "token_mean": 144.9,
+    "token_median": 162,
+    "per_source": {
+      "pubmed": {
+        "chunk_count": 442,
+        "token_min": 6,
+        "token_max": 200,
+        "token_mean": 149.2,
+        "token_median": 165.0,
+        "outlier_count": 170,
+        "outlier_rate": 0.3846
+      },
+      "uniprot": {
+        "chunk_count": 25,
+        "token_min": 69,
+        "token_max": 200,
+        "token_mean": 152.8,
+        "token_median": 154,
+        "outlier_count": 12,
+        "outlier_rate": 0.48
+      },
+      "pdb": {
+        "chunk_count": 30,
+        "token_min": 50,
+        "token_max": 94,
+        "token_mean": 74.7,
+        "token_median": 78.0,
+        "outlier_count": 30,
+        "outlier_rate": 1.0
+      }
+    }
+  },
+  "fingerprints": {
+    "total": 980,
+    "success": 980,
+    "conversion_rate": 1.0
+  },
+  "flags": [
+    "chunk length outlier rate 42.7% > threshold 10% (212/497 chunks outside 150\u2013250 tokens)"
+  ],
+  "passed": false
+}

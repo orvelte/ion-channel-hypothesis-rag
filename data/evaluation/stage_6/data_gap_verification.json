@@ -1,0 +1,63 @@
+{
+  "state-dependent": {
+    "match_count": 5,
+    "matching_chunk_ids": [
+      "pubmed_21349638_1",
+      "pubmed_32612000_0",
+      "pubmed_32612000_1",
+      "pubmed_30231997_0",
+      "pubmed_30231997_1"
+    ],
+    "sources": [
+      "pubmed"
+    ],
+    "chunk_types": [
+      "pubmed"
+    ]
+  },
+  "binding constant": {
+    "match_count": 0,
+    "matching_chunk_ids": [],
+    "sources": [],
+    "chunk_types": []
+  },
+  "dose-response": {
+    "match_count": 0,
+    "matching_chunk_ids": [],
+    "sources": [],
+    "chunk_types": []
+  },
+  "isoform": {
+    "match_count": 20,
+    "matching_chunk_ids": [
+      "pubmed_37498871_0",
+      "pubmed_37498871_1",
+      "pubmed_34843701_0",
+      "pubmed_18804930_0",
+      "pubmed_18804930_1",
+      "pubmed_40096941_1",
+      "pubmed_21349638_0",
+      "pubmed_37956038_3",
+      "pubmed_30231997_0",
+      "pubmed_30231997_1",
+      "pubmed_29393394_0",
+      "pubmed_29393394_1",
+      "pubmed_29393394_2",
+      "pubmed_34983286_0",
+      "pubmed_26005195_1",
+      "pubmed_26005195_2",
+      "pubmed_21115638_0",
+      "pubmed_21115638_1",
+      "pubmed_12514212_0",
+      "pdb_2KAV_0"
+    ],
+    "sources": [
+      "pdb",
+      "pubmed"
+    ],
+    "chunk_types": [
+      "pdb",
+      "pubmed"
+    ]
+  }
+}

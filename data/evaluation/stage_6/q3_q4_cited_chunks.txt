@@ -1,0 +1,38 @@
+=== Q3: carbamazepine vs phenytoin selectivity ===
+
+[chunk_id: pubmed_35696452_4]
+source: pubmed | token_count: 179
+text: Clinically, 13 out of 16 (81%) gain of function variants were associated with a reduction in seizures in response to sodium channel blocker treatment (carbamazepine, oxcarbazepine, phenytoin, lamotrigine or lacosamide) without evidence of symptom exacerbation. Our study expands the spectrum of gain of function SCN1A-related epilepsy phenotypes, defines key clinical features, provides novel insights into the underlying disease mechanisms between SCN1A-related epilepsy and familial hemiplegic migraine type 3, and identifies sodium channel blockers as potentially efficacious therapies. Gain of function disease should be considered in early onset epilepsies with a pathogenic SCN1A variant and non-Dravet syndrome phenotype.
+
+
+[chunk_id: pubmed_18489610_0]
+source: pubmed | token_count: 146
+text: Association between SCN1A polymorphism and carbamazepine-resistant epilepsy. To establish whether the SCN1A IVS5-91 G > A polymorphism of the SCN1A gene, which encodes the neuronal sodium channel alpha subunit, affects responsiveness to the antiepileptic drugs (AEDS) carbamazepine and/or phenytoin. SCN1A IVS5-91 G > A polymorphism was genotyped in 228 Japanese epileptic patients treated with AEDs. The association between AED responsiveness and the polymorphism was estimated by logistic regression analysis, adjusting for clinical factors affecting the outcome of AED therapy.
+
+
+[chunk_id: pubmed_30231997_0]
+source: pubmed | token_count: 195
+text: Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. Selective block of SCN9A promises to produce non-narcotic analgesic activity without motor or cognitive impairment. Several SCN9A-selective blockers have been reported, but efficacy in animal pain models required high multiples of the IC50 for channel block. Here, we report a target engagement assay using transgenic mice that has enabled the development of a second generation of selective SCN9A inhibitors that show robust analgesic activity in inflammatory and neuropathic pain models at low multiples of the IC50. Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel.
+
+
+[chunk_id: pubmed_30231997_1]
+source: pubmed | token_count: 104
+text: Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel. Chronic dosing increases compound potency about 10-fold, possibly due to reversal of sensitization arising during chronic injury, and provides efficacy that persists long after the compound has cleared from plasma.
+
+
+=== Q4: use-dependent block by local anaesthetics ===
+
+[chunk_id: pubmed_30231997_0]
+source: pubmed | token_count: 195
+text: Selective SCN9A Antagonists with Long Residence Time Show Improved Efficacy against Inflammatory and Neuropathic Pain. Selective block of SCN9A promises to produce non-narcotic analgesic activity without motor or cognitive impairment. Several SCN9A-selective blockers have been reported, but efficacy in animal pain models required high multiples of the IC50 for channel block. Here, we report a target engagement assay using transgenic mice that has enabled the development of a second generation of selective SCN9A inhibitors that show robust analgesic activity in inflammatory and neuropathic pain models at low multiples of the IC50. Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel.
+
+
+[chunk_id: pubmed_30231997_1]
+source: pubmed | token_count: 104
+text: Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivity among sodium channel isoforms and steeply state-dependent block. The improved efficacy correlates with very slow dissociation from the target channel. Chronic dosing increases compound potency about 10-fold, possibly due to reversal of sensitization arising during chronic injury, and provides efficacy that persists long after the compound has cleared from plasma.
+
+
+[chunk_id: pubmed_16210358_3]
+source: pubmed | token_count: 163
+text: Three mutants (V1611F, P1632S and F1808L) exhibited persistent sodium current ranging from approximately 1-3% of peak current amplitude that was significantly greater than WT-SCN1A. Several mutants had impaired slow inactivation, with V983A showing the most prominent effect. Finally, all of the functional alleles exhibited reduced use-dependent channel inhibition. In summary, SCN1A mutations associated with ICEGTC result in a wide spectrum of biophysical defects, including mild-to-moderate gating impairments, shifted voltage dependence and reduced use dependence. The constellation of biophysical abnormalities for some mutants is distinct from those previously observed for GEFS+ and SMEI, suggesting possible, but complex, genotype-phenotype correlations.
+

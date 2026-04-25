@@ -1,0 +1,693 @@
+{
+  "timestamp": "2026-04-22T15:37:18.613910",
+  "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "index_size": 562,
+  "known_pair_recall_at_5": 1.0,
+  "known_pair_results": [
+    {
+      "query": "lamotrigine sodium channel block epilepsy",
+      "expected_gene": "SCN1A",
+      "found_in_top5": true,
+      "rank": 3,
+      "top5_scores": [
+        0.9555,
+        0.9552,
+        0.9545,
+        0.9544,
+        0.9544
+      ],
+      "top5_chunks": [
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9555,
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of e"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9552,
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxi"
+        },
+        {
+          "chunk_id": "uniprot_P35498_1",
+          "score": 0.9545,
+          "text_snippet": "The influx of Na(+) ions provokes membrane depolarization, initiating the propagation of electrical signals throughout c"
+        },
+        {
+          "chunk_id": "pubmed_36636894_3",
+          "score": 0.9544,
+          "text_snippet": "SCN1A testing should therefore be included in the diagnostic workup of pediatric, familial and nonfamilial, focal epilep"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_1",
+          "score": 0.9544,
+          "text_snippet": "Implicated in the regulation of hippocampal replay occurring within sharp wave ripples (SPW-R) important for memory (By "
+        }
+      ]
+    },
+    {
+      "query": "phenytoin Nav1.2 inactivation anticonvulsant",
+      "expected_gene": "SCN2A",
+      "found_in_top5": true,
+      "rank": 1,
+      "top5_scores": [
+        0.9491,
+        0.9486,
+        0.9482,
+        0.9474,
+        0.9473
+      ],
+      "top5_chunks": [
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9491,
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of e"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9486,
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxi"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9482,
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: H"
+        },
+        {
+          "chunk_id": "uniprot_Q9NY46_2",
+          "score": 0.9474,
+          "text_snippet": "For instance, it controls the release of serotonin/5-hydroxytryptamine by enterochromaffin cells and is required for bot"
+        },
+        {
+          "chunk_id": "uniprot_P35498_1",
+          "score": 0.9473,
+          "text_snippet": "The influx of Na(+) ions provokes membrane depolarization, initiating the propagation of electrical signals throughout c"
+        }
+      ]
+    },
+    {
+      "query": "lidocaine voltage-gated channel cardiac arrhythmia",
+      "expected_gene": "SCN5A",
+      "found_in_top5": true,
+      "rank": 1,
+      "top5_scores": [
+        0.9457,
+        0.942,
+        0.9415,
+        0.9412,
+        0.9409
+      ],
+      "top5_chunks": [
+        {
+          "chunk_id": "uniprot_Q14524_2",
+          "score": 0.9457,
+          "text_snippet": "SCN5A is the predominant sodium channel expressed in myocardial cells and it is responsible for the initial upstroke of "
+        },
+        {
+          "chunk_id": "uniprot_Q15858_3",
+          "score": 0.942,
+          "text_snippet": "SCN9A plays a crucial role in controlling the excitability and action potential propagation from nociceptor neurons, the"
+        },
+        {
+          "chunk_id": "pubmed_37122208_0",
+          "score": 0.9415,
+          "text_snippet": "SCN5A channelopathy: arrhythmia, cardiomyopathy, epilepsy and beyond. Influx of sodium ions through voltage-gated sodium"
+        },
+        {
+          "chunk_id": "uniprot_P35499_3",
+          "score": 0.9412,
+          "text_snippet": "Highly expressed in skeletal muscles, SCN4A generates the action potential crucial for muscle contraction (PubMed:168901"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9409,
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: H"
+        }
+      ]
+    },
+    {
+      "query": "Nav1.7 inhibitor neuropathic pain SCN9A",
+      "expected_gene": "SCN9A",
+      "found_in_top5": true,
+      "rank": 1,
+      "top5_scores": [
+        0.958,
+        0.9548,
+        0.9547,
+        0.9543,
+        0.9535
+      ],
+      "top5_chunks": [
+        {
+          "chunk_id": "pubmed_38722683_0",
+          "score": 0.958,
+          "text_snippet": "Peripherally targeted analgesia via AAV-mediated sensory neuron-specific inhibition of multiple pronociceptive sodium ch"
+        },
+        {
+          "chunk_id": "pubmed_30617209_2",
+          "score": 0.9548,
+          "text_snippet": "In DRG neurons, siRNA knockdown of sodium channel \u03b24 subunits fails to significantly alter T790A current density but red"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9547,
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxi"
+        },
+        {
+          "chunk_id": "pubmed_29497094_2",
+          "score": 0.9543,
+          "text_snippet": "Additionally, AAV-Cre mediated SCN8A knockout, mostly in large DRG neurons, significantly attenuates excitability of the"
+        },
+        {
+          "chunk_id": "pubmed_39378238_0",
+          "score": 0.9535,
+          "text_snippet": "Interplay of SCN10A and SCN9A channels drives neuronal hyperexcitability in neuropathic pain. While voltage-gated sodium"
+        }
+      ]
+    },
+    {
+      "query": "Dravet syndrome sodium channel mutation",
+      "expected_gene": "SCN1A",
+      "found_in_top5": true,
+      "rank": 1,
+      "top5_scores": [
+        0.9605,
+        0.9601,
+        0.9594,
+        0.9591,
+        0.959
+      ],
+      "top5_chunks": [
+        {
+          "chunk_id": "pubmed_37812817_0",
+          "score": 0.9605,
+          "text_snippet": "Antisense oligonucleotides restore excitability, GABA signalling and sodium current density in a Dravet syndrome model. "
+        },
+        {
+          "chunk_id": "pubmed_35696452_0",
+          "score": 0.9601,
+          "text_snippet": "The gain of function SCN1A disorder spectrum: novel epilepsy phenotypes and therapeutic implications. Brain voltage-gate"
+        },
+        {
+          "chunk_id": "uniprot_Q14524_2",
+          "score": 0.9594,
+          "text_snippet": "SCN5A is the predominant sodium channel expressed in myocardial cells and it is responsible for the initial upstroke of "
+        },
+        {
+          "chunk_id": "pubmed_19139296_0",
+          "score": 0.9591,
+          "text_snippet": "Translational research in epilepsy genetics: sodium channels in man to interneuronopathy in mouse. Voltage-gated sodium "
+        },
+        {
+          "chunk_id": "pubmed_40048808_0",
+          "score": 0.959,
+          "text_snippet": "Ion channels and G protein-coupled receptors: Cannabidiol actions on disorders of excitability and synaptic excitatory-i"
+        }
+      ]
+    }
+  ],
+  "cosine_distribution": {
+    "sample_size": 100,
+    "mean": 0.9866,
+    "std": 0.0048,
+    "min": 0.963,
+    "max": 0.998,
+    "p95": 0.9927,
+    "collapse_threshold": 0.95
+  },
+  "nn_spot_check": [
+    {
+      "query": "voltage-gated sodium channel mechanism of action",
+      "top_k": [
+        {
+          "chunk_id": "pubmed_21349638_0",
+          "score": 0.9527,
+          "source": "pubmed",
+          "text_snippet": "A novel slow-inactivation-specific ion channel modulator attenuates neuropathic pain. Voltage-gated ion channels are implicated in pain sensation and "
+        },
+        {
+          "chunk_id": "uniprot_Q15858_0",
+          "score": 0.9507,
+          "source": "uniprot",
+          "text_snippet": "SCN9A (Sodium channel protein type 9 subunit alpha, Q15858). Pore-forming subunit of SCN9A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "uniprot_Q14524_0",
+          "score": 0.9503,
+          "source": "uniprot",
+          "text_snippet": "SCN5A (Sodium channel protein type 5 subunit alpha, Q14524). Pore-forming subunit of SCN5A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "uniprot_P35499_0",
+          "score": 0.9502,
+          "source": "uniprot",
+          "text_snippet": "SCN4A (Sodium channel protein type 4 subunit alpha, P35499). Pore-forming subunit of SCN4A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "pubmed_37846879_3",
+          "score": 0.9499,
+          "source": "pubmed",
+          "text_snippet": "These actions of Ih limit the firing of DRG neurons expressing WT SCN9A and reverse the hyperexcitability of DRG neurons expressing a gain-of-function"
+        },
+        {
+          "chunk_id": "pubmed_17367951_0",
+          "score": 0.9497,
+          "source": "pubmed",
+          "text_snippet": "Small interfering RNA-mediated selective knockdown of Na(V)1.8 tetrodotoxin-resistant sodium channel reverses mechanical allodynia in neuropathic rats"
+        },
+        {
+          "chunk_id": "pubmed_26861708_0",
+          "score": 0.9494,
+          "source": "pubmed",
+          "text_snippet": "Kinetic Analysis of Membrane Potential Dye Response to SCN9A Channel Activation Identifies Antagonists with Pharmacological Selectivity against SCN5A."
+        }
+      ]
+    },
+    {
+      "query": "SCN1A loss of function epilepsy mutation",
+      "top_k": [
+        {
+          "chunk_id": "pubmed_35696452_0",
+          "score": 0.9612,
+          "source": "pubmed",
+          "text_snippet": "The gain of function SCN1A disorder spectrum: novel epilepsy phenotypes and therapeutic implications. Brain voltage-gated sodium channel SCN1A (SCN1A)"
+        },
+        {
+          "chunk_id": "pubmed_40530598_0",
+          "score": 0.961,
+          "source": "pubmed",
+          "text_snippet": "SCN1A gain of function effects in Dravet syndrome: Insights into clinical phenotypes and therapeutic implications. A large number of cases with Dravet"
+        },
+        {
+          "chunk_id": "pubmed_40048808_0",
+          "score": 0.9596,
+          "source": "pubmed",
+          "text_snippet": "Ion channels and G protein-coupled receptors: Cannabidiol actions on disorders of excitability and synaptic excitatory-inhibitory ratio. Brain excitab"
+        },
+        {
+          "chunk_id": "pubmed_33855971_0",
+          "score": 0.959,
+          "source": "pubmed",
+          "text_snippet": "Epilepsy channelopathies go neddy: stabilizing SCN1A channels by neddylation. Loss-of-function mutations of SCN1A encoding the pore-forming \u03b1 subunit "
+        },
+        {
+          "chunk_id": "pubmed_36636894_0",
+          "score": 0.9588,
+          "source": "pubmed",
+          "text_snippet": "Gain of function SCN1A disease-causing variants: Expanding the phenotypic spectrum and functional studies guiding the choice of effective antiseizure "
+        },
+        {
+          "chunk_id": "pubmed_19139296_0",
+          "score": 0.9588,
+          "source": "pubmed",
+          "text_snippet": "Translational research in epilepsy genetics: sodium channels in man to interneuronopathy in mouse. Voltage-gated sodium channels are critical for memb"
+        },
+        {
+          "chunk_id": "pubmed_24002024_0",
+          "score": 0.9587,
+          "source": "pubmed",
+          "text_snippet": "Drug screening in Scn1a zebrafish mutant identifies clemizole as a potential Dravet syndrome treatment. Dravet syndrome is a catastrophic pediatric ep"
+        }
+      ]
+    },
+    {
+      "query": "Nav1.5 cardiac sodium channel structure",
+      "top_k": [
+        {
+          "chunk_id": "pdb_2KBI_0",
+          "score": 0.9638,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KBI: Solution NMR structure of the C-terminal EF-hand domain of human cardiac sodium channel SCN5A. Experimental method: SOLUTION NMR. Orga"
+        },
+        {
+          "chunk_id": "pdb_2KAV_0",
+          "score": 0.9634,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KAV: Solution structure of the human Voltage-gated Sodium Channel, brain isoform (SCN2A). Experimental method: SOLUTION NMR. Organism: Homo"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9628,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        },
+        {
+          "chunk_id": "pdb_4OVN_0",
+          "score": 0.9625,
+          "source": "pdb",
+          "text_snippet": "PDB entry 4OVN: Voltage-gated Sodium Channel 1.5 (SCN5A) C-terminal domain in complex with Calmodulin poised for activation. Experimental method: X-RA"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9624,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxin-IV and saxitoxin (Y1755 up)."
+        },
+        {
+          "chunk_id": "pdb_2L53_0",
+          "score": 0.9622,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2L53: Solution NMR Structure of apo-calmodulin in complex with the IQ motif of Human Cardiac Sodium Channel SCN5A. Experimental method: SOLU"
+        },
+        {
+          "chunk_id": "pdb_6AGF_0",
+          "score": 0.9619,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6AGF: Structure of the human voltage-gated sodium channel SCN4A in complex with beta1. Experimental method: ELECTRON MICROSCOPY. Organism: H"
+        }
+      ]
+    },
+    {
+      "query": "sodium channel blocker IC50 pharmacology",
+      "top_k": [
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9484,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9481,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxin-IV and saxitoxin (Y1755 up)."
+        },
+        {
+          "chunk_id": "pubmed_30231997_1",
+          "score": 0.9478,
+          "source": "pubmed",
+          "text_snippet": "Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivit"
+        },
+        {
+          "chunk_id": "uniprot_Q9NY46_2",
+          "score": 0.9478,
+          "source": "uniprot",
+          "text_snippet": "For instance, it controls the release of serotonin/5-hydroxytryptamine by enterochromaffin cells and is required for both glucagon- and glucose-induce"
+        },
+        {
+          "chunk_id": "pdb_2KAV_0",
+          "score": 0.9475,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KAV: Solution structure of the human Voltage-gated Sodium Channel, brain isoform (SCN2A). Experimental method: SOLUTION NMR. Organism: Homo"
+        },
+        {
+          "chunk_id": "pdb_2L53_0",
+          "score": 0.9475,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2L53: Solution NMR Structure of apo-calmodulin in complex with the IQ motif of Human Cardiac Sodium Channel SCN5A. Experimental method: SOLU"
+        },
+        {
+          "chunk_id": "uniprot_P35499_3",
+          "score": 0.9475,
+          "source": "uniprot",
+          "text_snippet": "Highly expressed in skeletal muscles, SCN4A generates the action potential crucial for muscle contraction (PubMed:16890191, PubMed:19347921, PubMed:25"
+        }
+      ]
+    },
+    {
+      "query": "action potential depolarization channel gating",
+      "top_k": [
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9341,
+          "source": "uniprot",
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of excitable membranes. Assuming o"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_1",
+          "score": 0.9337,
+          "source": "uniprot",
+          "text_snippet": "Implicated in the regulation of hippocampal replay occurring within sharp wave ripples (SPW-R) important for memory (By similarity) Disease associatio"
+        },
+        {
+          "chunk_id": "uniprot_Q9NY46_2",
+          "score": 0.9326,
+          "source": "uniprot",
+          "text_snippet": "For instance, it controls the release of serotonin/5-hydroxytryptamine by enterochromaffin cells and is required for both glucagon- and glucose-induce"
+        },
+        {
+          "chunk_id": "uniprot_Q15858_3",
+          "score": 0.9321,
+          "source": "uniprot",
+          "text_snippet": "SCN9A plays a crucial role in controlling the excitability and action potential propagation from nociceptor neurons, thereby contributing to the senso"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9317,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        },
+        {
+          "chunk_id": "uniprot_Q14524_2",
+          "score": 0.9313,
+          "source": "uniprot",
+          "text_snippet": "SCN5A is the predominant sodium channel expressed in myocardial cells and it is responsible for the initial upstroke of the action potential in cardia"
+        },
+        {
+          "chunk_id": "uniprot_P35499_3",
+          "score": 0.9309,
+          "source": "uniprot",
+          "text_snippet": "Highly expressed in skeletal muscles, SCN4A generates the action potential crucial for muscle contraction (PubMed:16890191, PubMed:19347921, PubMed:25"
+        }
+      ]
+    },
+    {
+      "query": "SCN9A Nav1.7 pain nociception",
+      "top_k": [
+        {
+          "chunk_id": "pubmed_38722683_0",
+          "score": 0.9466,
+          "source": "pubmed",
+          "text_snippet": "Peripherally targeted analgesia via AAV-mediated sensory neuron-specific inhibition of multiple pronociceptive sodium channels. This study reports tha"
+        },
+        {
+          "chunk_id": "uniprot_Q15858_3",
+          "score": 0.9431,
+          "source": "uniprot",
+          "text_snippet": "SCN9A plays a crucial role in controlling the excitability and action potential propagation from nociceptor neurons, thereby contributing to the senso"
+        },
+        {
+          "chunk_id": "pubmed_21115638_0",
+          "score": 0.9425,
+          "source": "pubmed",
+          "text_snippet": "SCN9A mutations associated with paroxysmal extreme pain disorder, but not erythromelalgia, enhance Navbeta4 peptide-mediated resurgent sodium currents"
+        },
+        {
+          "chunk_id": "pubmed_29497094_2",
+          "score": 0.9424,
+          "source": "pubmed",
+          "text_snippet": "Additionally, AAV-Cre mediated SCN8A knockout, mostly in large DRG neurons, significantly attenuates excitability of these neurons after SNI and reduc"
+        },
+        {
+          "chunk_id": "pubmed_30617209_2",
+          "score": 0.9416,
+          "source": "pubmed",
+          "text_snippet": "In DRG neurons, siRNA knockdown of sodium channel \u03b24 subunits fails to significantly alter T790A current density but reduces TTX-resistant resurgent c"
+        },
+        {
+          "chunk_id": "pubmed_39378238_0",
+          "score": 0.9416,
+          "source": "pubmed",
+          "text_snippet": "Interplay of SCN10A and SCN9A channels drives neuronal hyperexcitability in neuropathic pain. While voltage-gated sodium channels SCN9A and SCN10A bot"
+        },
+        {
+          "chunk_id": "pubmed_38722683_1",
+          "score": 0.9415,
+          "source": "pubmed",
+          "text_snippet": "A multipronged inhibition of INa1.7, INa1.6, INa1.3, and INa1.1 - but not INa1.5 and INa1.8 - was found for a prototype and named NaViPA1, which was d"
+        }
+      ]
+    },
+    {
+      "query": "anticonvulsant drug sodium channel target",
+      "top_k": [
+        {
+          "chunk_id": "uniprot_Q99250_1",
+          "score": 0.9472,
+          "source": "uniprot",
+          "text_snippet": "Implicated in the regulation of hippocampal replay occurring within sharp wave ripples (SPW-R) important for memory (By similarity) Disease associatio"
+        },
+        {
+          "chunk_id": "uniprot_Q9NY46_2",
+          "score": 0.947,
+          "source": "uniprot",
+          "text_snippet": "For instance, it controls the release of serotonin/5-hydroxytryptamine by enterochromaffin cells and is required for both glucagon- and glucose-induce"
+        },
+        {
+          "chunk_id": "uniprot_P35499_3",
+          "score": 0.9469,
+          "source": "uniprot",
+          "text_snippet": "Highly expressed in skeletal muscles, SCN4A generates the action potential crucial for muscle contraction (PubMed:16890191, PubMed:19347921, PubMed:25"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9461,
+          "source": "uniprot",
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of excitable membranes. Assuming o"
+        },
+        {
+          "chunk_id": "uniprot_Q15858_3",
+          "score": 0.9459,
+          "source": "uniprot",
+          "text_snippet": "SCN9A plays a crucial role in controlling the excitability and action potential propagation from nociceptor neurons, thereby contributing to the senso"
+        },
+        {
+          "chunk_id": "pubmed_30231997_1",
+          "score": 0.9455,
+          "source": "pubmed",
+          "text_snippet": "Like earlier arylsulfonamides, these newer acylsulfonamides target a binding site on the surface of voltage sensor domain 4 to achieve high selectivit"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9451,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        }
+      ]
+    },
+    {
+      "query": "potassium channel voltage sensor domain",
+      "top_k": [
+        {
+          "chunk_id": "uniprot_Q15858_0",
+          "score": 0.9478,
+          "source": "uniprot",
+          "text_snippet": "SCN9A (Sodium channel protein type 9 subunit alpha, Q15858). Pore-forming subunit of SCN9A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "uniprot_P35499_0",
+          "score": 0.9477,
+          "source": "uniprot",
+          "text_snippet": "SCN4A (Sodium channel protein type 4 subunit alpha, P35499). Pore-forming subunit of SCN4A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "uniprot_Q14524_0",
+          "score": 0.9476,
+          "source": "uniprot",
+          "text_snippet": "SCN5A (Sodium channel protein type 5 subunit alpha, Q14524). Pore-forming subunit of SCN5A, a voltage-gated sodium (Nav) channel that directly mediate"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9446,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        },
+        {
+          "chunk_id": "pdb_2KBI_0",
+          "score": 0.9445,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KBI: Solution NMR structure of the C-terminal EF-hand domain of human cardiac sodium channel SCN5A. Experimental method: SOLUTION NMR. Orga"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9441,
+          "source": "uniprot",
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of excitable membranes. Assuming o"
+        },
+        {
+          "chunk_id": "pdb_2KAV_0",
+          "score": 0.944,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KAV: Solution structure of the human Voltage-gated Sodium Channel, brain isoform (SCN2A). Experimental method: SOLUTION NMR. Organism: Homo"
+        }
+      ]
+    },
+    {
+      "query": "ion channel selectivity filter pore",
+      "top_k": [
+        {
+          "chunk_id": "uniprot_Q9NY46_2",
+          "score": 0.9485,
+          "source": "uniprot",
+          "text_snippet": "For instance, it controls the release of serotonin/5-hydroxytryptamine by enterochromaffin cells and is required for both glucagon- and glucose-induce"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9479,
+          "source": "uniprot",
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of excitable membranes. Assuming o"
+        },
+        {
+          "chunk_id": "pdb_7L83_0",
+          "score": 0.9475,
+          "source": "pdb",
+          "text_snippet": "PDB entry 7L83: NMR solution structure of SCN5A DIV S3b-S4a paddle motif in DPC micelle. Experimental method: SOLUTION NMR. Organism: Homo sapiens. Un"
+        },
+        {
+          "chunk_id": "pdb_2KBI_0",
+          "score": 0.9467,
+          "source": "pdb",
+          "text_snippet": "PDB entry 2KBI: Solution NMR structure of the C-terminal EF-hand domain of human cardiac sodium channel SCN5A. Experimental method: SOLUTION NMR. Orga"
+        },
+        {
+          "chunk_id": "pdb_6J8G_0",
+          "score": 0.9465,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6J8G: Structure of human voltage-gated sodium channel SCN9A in complex with auxiliary beta subunits, huwentoxin-IV and saxitoxin (Y1755 up)."
+        },
+        {
+          "chunk_id": "uniprot_Q99250_1",
+          "score": 0.9463,
+          "source": "uniprot",
+          "text_snippet": "Implicated in the regulation of hippocampal replay occurring within sharp wave ripples (SPW-R) important for memory (By similarity) Disease associatio"
+        },
+        {
+          "chunk_id": "pdb_6LQA_0",
+          "score": 0.9459,
+          "source": "pdb",
+          "text_snippet": "PDB entry 6LQA: voltage-gated sodium channel SCN5A with quinidine. Experimental method: ELECTRON MICROSCOPY. Organism: Homo sapiens. UniProt cross-ref"
+        }
+      ]
+    },
+    {
+      "query": "epilepsy genetic mutation channelopathy",
+      "top_k": [
+        {
+          "chunk_id": "uniprot_Q99250_0",
+          "score": 0.9319,
+          "source": "uniprot",
+          "text_snippet": "SCN2A (Sodium channel protein type 2 subunit alpha, Q99250). Mediates the voltage-dependent sodium ion permeability of excitable membranes. Assuming o"
+        },
+        {
+          "chunk_id": "pubmed_36636894_3",
+          "score": 0.9318,
+          "source": "pubmed",
+          "text_snippet": "SCN1A testing should therefore be included in the diagnostic workup of pediatric, familial and nonfamilial, focal epilepsies. Alternatively, non-DS/no"
+        },
+        {
+          "chunk_id": "uniprot_Q99250_1",
+          "score": 0.9318,
+          "source": "uniprot",
+          "text_snippet": "Implicated in the regulation of hippocampal replay occurring within sharp wave ripples (SPW-R) important for memory (By similarity) Disease associatio"
+        },
+        {
+          "chunk_id": "uniprot_P35499_3",
+          "score": 0.9307,
+          "source": "uniprot",
+          "text_snippet": "Highly expressed in skeletal muscles, SCN4A generates the action potential crucial for muscle contraction (PubMed:16890191, PubMed:19347921, PubMed:25"
+        },
+        {
+          "chunk_id": "pubmed_35696452_0",
+          "score": 0.93,
+          "source": "pubmed",
+          "text_snippet": "The gain of function SCN1A disorder spectrum: novel epilepsy phenotypes and therapeutic implications. Brain voltage-gated sodium channel SCN1A (SCN1A)"
+        },
+        {
+          "chunk_id": "uniprot_P35498_1",
+          "score": 0.9293,
+          "source": "uniprot",
+          "text_snippet": "The influx of Na(+) ions provokes membrane depolarization, initiating the propagation of electrical signals throughout cells and tissues (PubMed:14672"
+        },
+        {
+          "chunk_id": "pdb_7L83_0",
+          "score": 0.9285,
+          "source": "pdb",
+          "text_snippet": "PDB entry 7L83: NMR solution structure of SCN5A DIV S3b-S4a paddle motif in DPC micelle. Experimental method: SOLUTION NMR. Organism: Homo sapiens. Un"
+        }
+      ]
+    }
+  ],
+  "flags": [
+    "Embedding collapse: mean cosine similarity 0.987 > 0.95"
+  ],
+  "passed": false
+}

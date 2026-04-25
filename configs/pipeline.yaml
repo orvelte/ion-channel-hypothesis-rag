@@ -1,0 +1,109 @@
+# All tunable pipeline parameters. Do not hardcode these in source files.
+
+embedding:
+  model: "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext"
+  # original config: "pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-sst2" (repo unavailable)
+  # microsoft BiomedBERT is the canonical PubMedBERT — same pre-training corpus and architecture
+  chunk_size_tokens: 200
+  chunk_overlap_tokens: 20
+
+retrieval:
+  k: 7
+  index_type: "flat"  # IVF/HNSW tuning is out of scope
+  modality: hybrid  # options: text_only, hybrid
+  compound_index_enabled: false
+  hybrid_enabled: true
+  rrf_k: 60
+  bm25_weight: 1.0
+  dense_weight: 1.0
+  bm25_top_k_multiplier: 2  # retrieve 2k from each arm before RRF fusion
+
+compounds:
+  morgan_radius: 2
+  morgan_nbits: 2048
+
+llm:
+  model: "claude-opus-4-6"
+  # alternative: "gpt-4o"
+  temperature: 0.3
+  max_tokens: 2048
+
+data:
+  # ChEMBL target IDs for SCN1A–SCN9A (voltage-gated sodium channels)
+  # Verified by UniProt accession lookup: target_components__accession={uniprot_id}
+  chembl_target_ids:
+    - "CHEMBL1845"  # SCN1A (Nav1.1) — P35498
+    - "CHEMBL4187"  # SCN2A (Nav1.2) — Q99250
+    - "CHEMBL5163"  # SCN3A (Nav1.3) — Q9NY46
+    - "CHEMBL2072"  # SCN4A (Nav1.4) — P35499
+    - "CHEMBL1980"  # SCN5A (Nav1.5) — Q14524
+    - "CHEMBL5202"  # SCN8A (Nav1.6) — Q9UQD0
+    - "CHEMBL4296"  # SCN9A (Nav1.7) — Q15858
+  # Corpus size controls — pChEMBL >= 5.0 means IC50/Ki <= 10 µM (meaningful potency)
+  chembl_pchembl_min: 5.0
+  chembl_max_per_target: 150
+  uniprot_ids:
+    - "P35498"  # SCN1A
+    - "Q99250"  # SCN2A
+    - "Q9NY46"  # SCN3A
+    - "P35499"  # SCN4A
+    - "Q14524"  # SCN5A
+    - "Q9UQD0"  # SCN8A
+    - "Q15858"  # SCN9A
+  pdb_max_structures: 30
+
+paths:
+  raw: "data/raw"
+  processed: "data/processed"
+  embeddings: "data/embeddings"
+  rejected: "data/rejected"
+  evaluation: "data/evaluation"
+
+benchmark:
+  queries:
+    - id: q1
+      text: "What is the mechanism of SCN1A inhibition by lamotrigine?"
+      expected_target: SCN1A
+      control: false
+    - id: q2
+      text: "How do Nav1.7 mutations cause erythromelalgia?"
+      expected_target: SCN9A
+      control: false
+    - id: q3
+      text: "What is the role of fast inactivation in sodium channel gating?"
+      expected_target: null
+      control: false
+    - id: q4
+      text: "Propose a mechanism for Dravet syndrome rescue via SCN1A modulation."
+      expected_target: SCN1A
+      control: false
+    - id: q5
+      text: "What is the mechanism of lidocaine block of sodium channels?"
+      expected_target: SCN5A
+      control: true
+      control_type: retrieval_limit
+      control_note: "Relevant chunk exists at BM25 rank 4 but falls outside top-5. Expect weak or partial grounding. Use to practice distinguishing retrieval failure from generation failure at Check 6."
+
+evaluation:
+  # Check 2 thresholds
+  # Calibrated to BPE token counts for biomedical text (word-to-BPE ratio ~1.6x):
+  # 100 BPE ≈ 60 words (minimum for meaningful retrieval context)
+  # 300 BPE ≈ 190 words (headroom above chunk_size=200 for sentence-boundary alignment
+  #   and short trailing chunks merged with the preceding chunk)
+  # PDB structure metadata chunks are excluded from this check — they are structural
+  # records (title, method, organism), not prose bodies, and are inherently short.
+  chunk_length_min_tokens: 100
+  chunk_length_max_tokens: 300
+  chunk_length_outlier_threshold: 0.10
+  fp_conversion_rate_threshold: 0.95
+  # Check 1 thresholds
+  max_null_rate: 0.05
+  min_cross_reference_coverage: 0.80
+  # Check 3 thresholds
+  embedding_collapse_cosine_threshold: 0.95
+  # Check 4 thresholds
+  recall_at_k_threshold: 0.60
+  irrelevant_chunk_threshold: 0.30
+  # Check 6 thresholds
+  parse_success_rate_threshold: 0.90
+  max_ungrounded_output_rate: 0.20

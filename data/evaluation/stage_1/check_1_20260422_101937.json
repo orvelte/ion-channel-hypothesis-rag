@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-04-22T10:19:18.772659",
+  "record_counts": {
+    "chembl": 980,
+    "uniprot": 7,
+    "pdb": 30,
+    "pubmed": 198
+  },
+  "source_errors": {},
+  "checks": {
+    "null_rates": {
+      "chembl.chembl_id": 0.0,
+      "chembl.smiles": 0.0,
+      "chembl.standard_value": 0.0,
+      "chembl.standard_units": 0.0,
+      "chembl.standard_type": 0.0,
+      "chembl.target_chembl_id": 0.0,
+      "chembl.assay_chembl_id": 0.0,
+      "uniprot.uniprot_id": 0.0,
+      "uniprot.gene_name": 0.0,
+      "uniprot.sequence": 0.0,
+      "uniprot.protein_name": 0.0,
+      "uniprot.organism": 0.0
+    },
+    "smiles_parse_rate": 1.0,
+    "smiles_parse_failure_examples": [],
+    "chembl_to_uniprot_coverage": 1.0,
+    "chembl_target_xref_details": {
+      "CHEMBL1845": true,
+      "CHEMBL4187": true,
+      "CHEMBL5163": true,
+      "CHEMBL2072": true,
+      "CHEMBL1980": true,
+      "CHEMBL5202": true,
+      "CHEMBL4296": true
+    },
+    "pdb_to_uniprot_coverage": 1.0,
+    "schema_summary": {
+      "chembl_unique_molecules": 695,
+      "chembl_unique_targets": 7,
+      "chembl_standard_types": [
+        "EC50",
+        "IC50",
+        "Kd",
+        "Ki"
+      ],
+      "uniprot_genes": [
+        "SCN1A",
+        "SCN2A",
+        "SCN3A",
+        "SCN4A",
+        "SCN5A",
+        "SCN8A",
+        "SCN9A"
+      ],
+      "uniprot_with_function_annotation": 7,
+      "pdb_experimental_methods": [
+        "ELECTRON MICROSCOPY",
+        "SOLUTION NMR",
+        "X-RAY DIFFRACTION"
+      ],
+      "pdb_with_ligands": 0,
+      "pubmed_year_range": [
+        2001,
+        2026
+      ],
+      "pubmed_with_mesh": 198
+    }
+  },
+  "flags": [],
+  "passed": true
+}
