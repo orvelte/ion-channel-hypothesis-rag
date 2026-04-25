@@ -26,6 +26,9 @@ data/rejected/*
 .env
 .claude/
 
+# Local-only
+CLAUDE.md
+
 # macOS
 .DS_Store
 
